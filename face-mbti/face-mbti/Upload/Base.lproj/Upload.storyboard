@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Upload View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="UploadViewController" customModule="face_mbti" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6V-80-iiY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                <color key="backgroundColor" name="Up"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kbZ-LE-QCq">
+                                <rect key="frame" x="0.0" y="448" width="414" height="448"/>
+                                <color key="backgroundColor" name="Down"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8al-Yn-QkF">
+                                <rect key="frame" x="139" y="380" width="136" height="136"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NvR-PM-bxR">
+                                        <rect key="frame" x="0.0" y="1" width="136" height="133.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="NvR-PM-bxR" firstAttribute="centerY" secondItem="8al-Yn-QkF" secondAttribute="centerY" id="55e-Fb-FQn"/>
+                                    <constraint firstAttribute="width" constant="136" id="8kS-ND-orI"/>
+                                    <constraint firstAttribute="trailing" secondItem="NvR-PM-bxR" secondAttribute="trailing" id="9eB-gy-jZU"/>
+                                    <constraint firstAttribute="width" secondItem="8al-Yn-QkF" secondAttribute="height" id="HLw-FJ-1Of"/>
+                                    <constraint firstItem="NvR-PM-bxR" firstAttribute="top" secondItem="8al-Yn-QkF" secondAttribute="top" id="K8j-jB-qGh"/>
+                                    <constraint firstItem="NvR-PM-bxR" firstAttribute="leading" secondItem="8al-Yn-QkF" secondAttribute="leading" id="bIb-cf-SVs"/>
+                                    <constraint firstAttribute="bottom" secondItem="NvR-PM-bxR" secondAttribute="bottom" id="fQ3-hi-Za1"/>
+                                    <constraint firstItem="NvR-PM-bxR" firstAttribute="centerX" secondItem="8al-Yn-QkF" secondAttribute="centerX" id="jpk-aN-kno"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사진을 선택해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqP-t3-y7D">
+                                <rect key="frame" x="71" y="556" width="272.5" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gqP-t3-y7D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9A9-hf-eNd"/>
+                            <constraint firstAttribute="trailing" secondItem="kbZ-LE-QCq" secondAttribute="trailing" id="9nF-uG-XXC"/>
+                            <constraint firstItem="gqP-t3-y7D" firstAttribute="top" secondItem="8al-Yn-QkF" secondAttribute="bottom" constant="40" id="BNx-mk-mDA"/>
+                            <constraint firstItem="g6V-80-iiY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Btc-Md-d6c"/>
+                            <constraint firstItem="kbZ-LE-QCq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ENN-O7-UOp"/>
+                            <constraint firstItem="kbZ-LE-QCq" firstAttribute="top" secondItem="g6V-80-iiY" secondAttribute="bottom" id="LVl-8Z-7B5"/>
+                            <constraint firstAttribute="trailing" secondItem="g6V-80-iiY" secondAttribute="trailing" id="Qkk-dq-atf"/>
+                            <constraint firstItem="8al-Yn-QkF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RBX-BH-lfx"/>
+                            <constraint firstAttribute="bottom" secondItem="kbZ-LE-QCq" secondAttribute="bottom" id="Z4Z-nc-dTg"/>
+                            <constraint firstItem="g6V-80-iiY" firstAttribute="height" secondItem="kbZ-LE-QCq" secondAttribute="height" id="mJS-rq-IIZ"/>
+                            <constraint firstItem="8al-Yn-QkF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o8U-hW-Q18"/>
+                            <constraint firstItem="g6V-80-iiY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sTQ-7f-GFd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="65"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <namedColor name="Down">
+            <color red="0.98799997568130493" green="0.88999998569488525" blue="0.91399997472763062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Up">
+            <color red="0.27300000190734863" green="0.33899998664855957" blue="0.46799999475479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
