@@ -12,9 +12,7 @@ class LoadingViewController: UIViewController {
         super.viewDidAppear(animated)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            let loading = UIStoryboard(name: "Result", bundle: .main).instantiateInitialViewController()
-            loading?.modalPresentationStyle = .fullScreen
-            self.present(loading!, animated: true, completion: nil)
+            self.present(R.storyboard.result())
         }
     }
 }
