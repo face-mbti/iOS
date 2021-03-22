@@ -7,5 +7,9 @@ target 'face-mbti' do
 
   # Pods for face-mbti
   pod 'R.swift'
+  pod 'SwiftLint'
+  pod 'Alamofire', '~> 5.2'
+  pod 'AlamofireImage', '~> 4.1'
+  pod 'SnapKit', '~> 5.0.0'
 
 end
