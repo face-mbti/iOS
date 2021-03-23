@@ -39,7 +39,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fm9-nw-9fA"/>
-                        <color key="backgroundColor" name="Up"/>
+                        <color key="backgroundColor" name="primary"/>
                         <constraints>
                             <constraint firstItem="482-nN-ICT" firstAttribute="top" secondItem="ncX-dB-M7m" secondAttribute="bottom" constant="40" id="9nf-uO-3dl"/>
                             <constraint firstItem="ncX-dB-M7m" firstAttribute="centerY" secondItem="khw-UB-ck5" secondAttribute="centerY" id="AOg-QU-Agb"/>
@@ -54,7 +54,7 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="Up">
+        <namedColor name="primary">
             <color red="0.27300000190734863" green="0.33899998664855957" blue="0.46799999475479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>

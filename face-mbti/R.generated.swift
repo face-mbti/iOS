@@ -159,14 +159,22 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.color` struct is generated, and contains static references to 3 colors.
+  /// This `R.color` struct is generated, and contains static references to 7 colors.
   struct color {
     /// Color `AccentColor`.
     static let accentColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "AccentColor")
-    /// Color `Down`.
-    static let down = Rswift.ColorResource(bundle: R.hostingBundle, name: "Down")
-    /// Color `Up`.
-    static let up = Rswift.ColorResource(bundle: R.hostingBundle, name: "Up")
+    /// Color `claret`.
+    static let claret = Rswift.ColorResource(bundle: R.hostingBundle, name: "claret")
+    /// Color `orange`.
+    static let orange = Rswift.ColorResource(bundle: R.hostingBundle, name: "orange")
+    /// Color `primary`.
+    static let primary = Rswift.ColorResource(bundle: R.hostingBundle, name: "primary")
+    /// Color `purple`.
+    static let purple = Rswift.ColorResource(bundle: R.hostingBundle, name: "purple")
+    /// Color `seconary`.
+    static let seconary = Rswift.ColorResource(bundle: R.hostingBundle, name: "seconary")
+    /// Color `yellow`.
+    static let yellow = Rswift.ColorResource(bundle: R.hostingBundle, name: "yellow")
 
     #if os(iOS) || os(tvOS)
     /// `UIColor(named: "AccentColor", bundle: ..., traitCollection: ...)`
@@ -178,20 +186,56 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
-    /// `UIColor(named: "Down", bundle: ..., traitCollection: ...)`
+    /// `UIColor(named: "claret", bundle: ..., traitCollection: ...)`
     @available(tvOS 11.0, *)
     @available(iOS 11.0, *)
-    static func down(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
-      return UIKit.UIColor(resource: R.color.down, compatibleWith: traitCollection)
+    static func claret(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.claret, compatibleWith: traitCollection)
     }
     #endif
 
     #if os(iOS) || os(tvOS)
-    /// `UIColor(named: "Up", bundle: ..., traitCollection: ...)`
+    /// `UIColor(named: "orange", bundle: ..., traitCollection: ...)`
     @available(tvOS 11.0, *)
     @available(iOS 11.0, *)
-    static func up(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
-      return UIKit.UIColor(resource: R.color.up, compatibleWith: traitCollection)
+    static func orange(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.orange, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "primary", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func primary(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.primary, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "purple", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func purple(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.purple, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "seconary", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func seconary(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.seconary, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIColor(named: "yellow", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func yellow(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.yellow, compatibleWith: traitCollection)
     }
     #endif
 
@@ -204,18 +248,50 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(watchOS)
-    /// `UIColor(named: "Down", bundle: ..., traitCollection: ...)`
+    /// `UIColor(named: "claret", bundle: ..., traitCollection: ...)`
     @available(watchOSApplicationExtension 4.0, *)
-    static func down(_: Void = ()) -> UIKit.UIColor? {
-      return UIKit.UIColor(named: R.color.down.name)
+    static func claret(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.claret.name)
     }
     #endif
 
     #if os(watchOS)
-    /// `UIColor(named: "Up", bundle: ..., traitCollection: ...)`
+    /// `UIColor(named: "orange", bundle: ..., traitCollection: ...)`
     @available(watchOSApplicationExtension 4.0, *)
-    static func up(_: Void = ()) -> UIKit.UIColor? {
-      return UIKit.UIColor(named: R.color.up.name)
+    static func orange(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.orange.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "primary", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func primary(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.primary.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "purple", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func purple(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.purple.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "seconary", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func seconary(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.seconary.name)
+    }
+    #endif
+
+    #if os(watchOS)
+    /// `UIColor(named: "yellow", bundle: ..., traitCollection: ...)`
+    @available(watchOSApplicationExtension 4.0, *)
+    static func yellow(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.yellow.name)
     }
     #endif
 
@@ -389,7 +465,7 @@ struct _R: Rswift.Validatable {
 
       static func validate() throws {
         if #available(iOS 11.0, tvOS 11.0, *) {
-          if UIKit.UIColor(named: "Up", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'Up' is used in storyboard 'Loading', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "primary", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'primary' is used in storyboard 'Loading', but couldn't be loaded.") }
         }
       }
 
@@ -423,8 +499,8 @@ struct _R: Rswift.Validatable {
       static func validate() throws {
         if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "photo") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'photo' is used in storyboard 'Upload', but couldn't be loaded.") } }
         if #available(iOS 11.0, tvOS 11.0, *) {
-          if UIKit.UIColor(named: "Down", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'Down' is used in storyboard 'Upload', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "Up", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'Up' is used in storyboard 'Upload', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "primary", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'primary' is used in storyboard 'Upload', but couldn't be loaded.") }
+          if UIKit.UIColor(named: "seconary", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'seconary' is used in storyboard 'Upload', but couldn't be loaded.") }
         }
       }
 
