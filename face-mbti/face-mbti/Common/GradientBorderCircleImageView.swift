@@ -33,7 +33,10 @@ class GradientBorderCircleImageView: UIImageView {
         clipsToBounds = true
         layer.cornerRadius = bounds.width / 2
         backgroundColor = .systemBackground
-        layer.addGradienBorder(colors: [UIColor(hexString: "#FFB441"), UIColor(hexString: "#CD1083")], width: 6)
+        layer.addGradienBorder(colors: [UIColor(hexString: "#FFB441"), UIColor(hexString: "#CD1083")], width: bounds.width * 0.03)
+        snp.makeConstraints { make in
+            make.width.equalTo(snp.height)
+        }
     }
 }
 
