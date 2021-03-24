@@ -312,6 +312,21 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.image` struct is generated, and contains static references to 1 images.
+  struct image {
+    /// Image `sampleProfile`.
+    static let sampleProfile = Rswift.ImageResource(bundle: R.hostingBundle, name: "sampleProfile")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "sampleProfile", bundle: ..., traitCollection: ...)`
+    static func sampleProfile(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.sampleProfile, compatibleWith: traitCollection)
+    }
+    #endif
+
+    fileprivate init() {}
+  }
+
   /// This `R.info` struct is generated, and contains static references to 1 properties.
   struct info {
     struct uiApplicationSceneManifest {
@@ -343,6 +358,34 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  struct nib {
+    /// Nib `CelebrityCollectionViewCell`.
+    static let celebrityCollectionViewCell = _R.nib._CelebrityCollectionViewCell()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "CelebrityCollectionViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.celebrityCollectionViewCell) instead")
+    static func celebrityCollectionViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.celebrityCollectionViewCell)
+    }
+    #endif
+
+    static func celebrityCollectionViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CelebrityCollectionViewCell? {
+      return R.nib.celebrityCollectionViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CelebrityCollectionViewCell
+    }
+
+    fileprivate init() {}
+  }
+
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  struct reuseIdentifier {
+    /// Reuse identifier `CelebrityCollectionViewCell`.
+    static let celebrityCollectionViewCell: Rswift.ReuseIdentifier<CelebrityCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "CelebrityCollectionViewCell")
+
+    fileprivate init() {}
+  }
+
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
       try _R.validate()
@@ -362,6 +405,26 @@ struct _R: Rswift.Validatable {
     try storyboard.validate()
     #endif
   }
+
+  #if os(iOS) || os(tvOS)
+  struct nib {
+    struct _CelebrityCollectionViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = CelebrityCollectionViewCell
+
+      let bundle = R.hostingBundle
+      let identifier = "CelebrityCollectionViewCell"
+      let name = "CelebrityCollectionViewCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CelebrityCollectionViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CelebrityCollectionViewCell
+      }
+
+      fileprivate init() {}
+    }
+
+    fileprivate init() {}
+  }
+  #endif
 
   #if os(iOS) || os(tvOS)
   struct storyboard: Rswift.Validatable {
