@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Rswift
 
 extension UIViewController {
     func present(_ storyboard: UIStoryboard,
@@ -18,5 +19,17 @@ extension UIViewController {
         
         viewController.modalPresentationStyle = modalPresentationStyle
         present(viewController, animated: animated, completion: completion)
+    }
+    
+    func present(_ storyboard: StoryboardResourceType,
+                 modalPresentationStyle: UIModalPresentationStyle = .fullScreen,
+                 animated: Bool = true,
+                 completion: (() -> Void)? = nil) {
+        present(
+            UIStoryboard(name: storyboard.name, bundle: storyboard.bundle),
+            modalPresentationStyle: modalPresentationStyle,
+            animated: animated,
+            completion: completion
+        )
     }
 }

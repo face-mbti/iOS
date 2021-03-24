@@ -12,7 +12,7 @@ class UploadViewController: UIViewController {
         super.viewDidAppear(animated)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.present(R.storyboard.loading())
+            self.present(R.storyboard.loading)
         }
     }
 }

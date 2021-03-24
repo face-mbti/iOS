@@ -12,7 +12,7 @@ class LoadingViewController: UIViewController {
         super.viewDidAppear(animated)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.present(R.storyboard.result())
+            self.present(R.storyboard.result)
         }
     }
 }
