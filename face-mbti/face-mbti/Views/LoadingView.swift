@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct LoadingView: View {
-    @State var showResultView = false
+    @State var showResultTabView = false
 
     var body: some View {
         NavigationView {
             VStack {
                 ProgressView()
                 Text("당신의 MBTI를 찾고 있어요")
-                //            NavigationLink("", destination: , isActive: $showResultView)
+                            NavigationLink("", destination: ResultTabView(), isActive: $showResultTabView)
             }.onAppear {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                    showResultView = true
+                    showResultTabView = true
                 }
             }
         }.navigationBarHidden(true)
