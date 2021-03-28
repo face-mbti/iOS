@@ -89,69 +89,15 @@ struct R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 7 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 1 storyboards.
   struct storyboard {
-    /// Storyboard `Celebrity`.
-    static let celebrity = _R.storyboard.celebrity()
-    /// Storyboard `Graph`.
-    static let graph = _R.storyboard.graph()
-    /// Storyboard `Information`.
-    static let information = _R.storyboard.information()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
-    /// Storyboard `Loading`.
-    static let loading = _R.storyboard.loading()
-    /// Storyboard `Result`.
-    static let result = _R.storyboard.result()
-    /// Storyboard `Upload`.
-    static let upload = _R.storyboard.upload()
-
-    #if os(iOS) || os(tvOS)
-    /// `UIStoryboard(name: "Celebrity", bundle: ...)`
-    static func celebrity(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.celebrity)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIStoryboard(name: "Graph", bundle: ...)`
-    static func graph(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.graph)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIStoryboard(name: "Information", bundle: ...)`
-    static func information(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.information)
-    }
-    #endif
 
     #if os(iOS) || os(tvOS)
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
     static func launchScreen(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.launchScreen)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIStoryboard(name: "Loading", bundle: ...)`
-    static func loading(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.loading)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIStoryboard(name: "Result", bundle: ...)`
-    static func result(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.result)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIStoryboard(name: "Upload", bundle: ...)`
-    static func upload(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.upload)
     }
     #endif
 
@@ -341,7 +287,6 @@ struct R: Rswift.Validatable {
             static let _key = "Default Configuration"
             static let uiSceneConfigurationName = infoPlistString(path: ["UIApplicationSceneManifest", "UISceneConfigurations", "UIWindowSceneSessionRoleApplication", "Default Configuration"], key: "UISceneConfigurationName") ?? "Default Configuration"
             static let uiSceneDelegateClassName = infoPlistString(path: ["UIApplicationSceneManifest", "UISceneConfigurations", "UIWindowSceneSessionRoleApplication", "Default Configuration"], key: "UISceneDelegateClassName") ?? "$(PRODUCT_MODULE_NAME).SceneDelegate"
-            static let uiSceneStoryboardFile = infoPlistString(path: ["UIApplicationSceneManifest", "UISceneConfigurations", "UIWindowSceneSessionRoleApplication", "Default Configuration"], key: "UISceneStoryboardFile") ?? "Upload"
 
             fileprivate init() {}
           }
@@ -354,34 +299,6 @@ struct R: Rswift.Validatable {
 
       fileprivate init() {}
     }
-
-    fileprivate init() {}
-  }
-
-  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
-  struct nib {
-    /// Nib `CelebrityCollectionViewCell`.
-    static let celebrityCollectionViewCell = _R.nib._CelebrityCollectionViewCell()
-
-    #if os(iOS) || os(tvOS)
-    /// `UINib(name: "CelebrityCollectionViewCell", in: bundle)`
-    @available(*, deprecated, message: "Use UINib(resource: R.nib.celebrityCollectionViewCell) instead")
-    static func celebrityCollectionViewCell(_: Void = ()) -> UIKit.UINib {
-      return UIKit.UINib(resource: R.nib.celebrityCollectionViewCell)
-    }
-    #endif
-
-    static func celebrityCollectionViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CelebrityCollectionViewCell? {
-      return R.nib.celebrityCollectionViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CelebrityCollectionViewCell
-    }
-
-    fileprivate init() {}
-  }
-
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
-  struct reuseIdentifier {
-    /// Reuse identifier `CelebrityCollectionViewCell`.
-    static let celebrityCollectionViewCell: Rswift.ReuseIdentifier<CelebrityCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "CelebrityCollectionViewCell")
 
     fileprivate init() {}
   }
@@ -407,101 +324,12 @@ struct _R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
-  struct nib {
-    struct _CelebrityCollectionViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
-      typealias ReusableType = CelebrityCollectionViewCell
-
-      let bundle = R.hostingBundle
-      let identifier = "CelebrityCollectionViewCell"
-      let name = "CelebrityCollectionViewCell"
-
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CelebrityCollectionViewCell? {
-        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CelebrityCollectionViewCell
-      }
-
-      fileprivate init() {}
-    }
-
-    fileprivate init() {}
-  }
-  #endif
-
-  #if os(iOS) || os(tvOS)
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
       #if os(iOS) || os(tvOS)
-      try celebrity.validate()
-      #endif
-      #if os(iOS) || os(tvOS)
-      try graph.validate()
-      #endif
-      #if os(iOS) || os(tvOS)
-      try information.validate()
-      #endif
-      #if os(iOS) || os(tvOS)
       try launchScreen.validate()
       #endif
-      #if os(iOS) || os(tvOS)
-      try loading.validate()
-      #endif
-      #if os(iOS) || os(tvOS)
-      try result.validate()
-      #endif
-      #if os(iOS) || os(tvOS)
-      try upload.validate()
-      #endif
     }
-
-    #if os(iOS) || os(tvOS)
-    struct celebrity: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = CelebrityViewController
-
-      let bundle = R.hostingBundle
-      let name = "Celebrity"
-
-      static func validate() throws {
-        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "star.circle") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'star.circle' is used in storyboard 'Celebrity', but couldn't be loaded.") } }
-        if #available(iOS 11.0, tvOS 11.0, *) {
-        }
-      }
-
-      fileprivate init() {}
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    struct graph: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = GraphViewController
-
-      let bundle = R.hostingBundle
-      let name = "Graph"
-
-      static func validate() throws {
-        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "person.crop.circle") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'person.crop.circle' is used in storyboard 'Graph', but couldn't be loaded.") } }
-        if #available(iOS 11.0, tvOS 11.0, *) {
-        }
-      }
-
-      fileprivate init() {}
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    struct information: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = InformationViewController
-
-      let bundle = R.hostingBundle
-      let name = "Information"
-
-      static func validate() throws {
-        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "info.circle") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'info.circle' is used in storyboard 'Information', but couldn't be loaded.") } }
-        if #available(iOS 11.0, tvOS 11.0, *) {
-        }
-      }
-
-      fileprivate init() {}
-    }
-    #endif
 
     #if os(iOS) || os(tvOS)
     struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
@@ -512,58 +340,6 @@ struct _R: Rswift.Validatable {
 
       static func validate() throws {
         if #available(iOS 11.0, tvOS 11.0, *) {
-        }
-      }
-
-      fileprivate init() {}
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    struct loading: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = LoadingViewController
-
-      let bundle = R.hostingBundle
-      let name = "Loading"
-
-      static func validate() throws {
-        if #available(iOS 11.0, tvOS 11.0, *) {
-          if UIKit.UIColor(named: "primary", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'primary' is used in storyboard 'Loading', but couldn't be loaded.") }
-        }
-      }
-
-      fileprivate init() {}
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    struct result: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = ResultViewController
-
-      let bundle = R.hostingBundle
-      let name = "Result"
-
-      static func validate() throws {
-        if #available(iOS 11.0, tvOS 11.0, *) {
-        }
-      }
-
-      fileprivate init() {}
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    struct upload: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = UploadViewController
-
-      let bundle = R.hostingBundle
-      let name = "Upload"
-
-      static func validate() throws {
-        if #available(iOS 13.0, *) { if UIKit.UIImage(systemName: "photo") == nil { throw Rswift.ValidationError(description: "[R.swift] System image named 'photo' is used in storyboard 'Upload', but couldn't be loaded.") } }
-        if #available(iOS 11.0, tvOS 11.0, *) {
-          if UIKit.UIColor(named: "primary", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'primary' is used in storyboard 'Upload', but couldn't be loaded.") }
-          if UIKit.UIColor(named: "seconary", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'seconary' is used in storyboard 'Upload', but couldn't be loaded.") }
         }
       }
 
