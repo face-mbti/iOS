@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftUIX
 
 struct ResultTabView: View {
     var body: some View {
@@ -31,8 +32,16 @@ struct ResultTabView: View {
 }
 
 struct ResultView: View {
+    @State var isSheet = false
+
     var body: some View {
-        ProfileImage(image: R.image.sampleProfile)
+        VStack {
+            ProfileImage(image: R.image.sampleProfile)
+            Button(action: { isSheet = true }, label: { Text("공유하기") })
+                .sheet(isPresented: $isSheet) {
+                    AppActivityView(activityItems: ["Hello!"])
+                }
+        }
     }
 }
 
