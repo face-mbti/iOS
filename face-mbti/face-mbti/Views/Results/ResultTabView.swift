@@ -16,7 +16,7 @@ struct ResultTabView: View {
                         Text("First")
                     }
 
-                ResultPredictView()
+                ResultPredictView(predictionResult: .dummy)
                     .tabItem {
                         Text("Second")
                     }
@@ -37,8 +37,10 @@ struct ResultView: View {
 }
 
 struct ResultPredictView: View {
+    let predictionResult: PredictionResult
+
     var body: some View {
-        Text("Predict")
+        Text(predictionResult.jsonString ?? "invalid json!")
     }
 }
 
@@ -50,6 +52,6 @@ struct ResultCelebrityView: View {
 
 struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
-        ResultView()
+        ResultTabView()
     }
 }

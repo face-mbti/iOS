@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1E29DE9031F1F3EFF2CD09A4 /* Pods_face_mbti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B805EFF759D1C8EB8DD3A9 /* Pods_face_mbti.framework */; };
+		CFE9A1F826121950009EB96D /* PredictionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9A1F726121950009EB96D /* PredictionResult.swift */; };
+		CFE9A1FA26121EE9009EB96D /* Encodable+jsonString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9A1F926121EE9009EB96D /* Encodable+jsonString.swift */; };
 		F40A9CC32610384A00CC47BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40A9CC22610384A00CC47BA /* AppDelegate.swift */; };
 		F40A9CC52610384A00CC47BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40A9CC42610384A00CC47BA /* SceneDelegate.swift */; };
 		F40A9CC72610384A00CC47BA /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40A9CC62610384A00CC47BA /* UploadView.swift */; };
@@ -25,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		13B805EFF759D1C8EB8DD3A9 /* Pods_face_mbti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_face_mbti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE9A1F726121950009EB96D /* PredictionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionResult.swift; sourceTree = "<group>"; };
+		CFE9A1F926121EE9009EB96D /* Encodable+jsonString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+jsonString.swift"; sourceTree = "<group>"; };
 		E6C272E5954487F4A497772F /* Pods-face-mbti.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-face-mbti.debug.xcconfig"; path = "Target Support Files/Pods-face-mbti/Pods-face-mbti.debug.xcconfig"; sourceTree = "<group>"; };
 		F40A9CBF2610384A00CC47BA /* face-mbti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "face-mbti.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40A9CC22610384A00CC47BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +77,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CFE9A1F62612190E009EB96D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CFE9A1F726121950009EB96D /* PredictionResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F40A9CB62610384A00CC47BA = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +107,7 @@
 		F40A9CC12610384A00CC47BA /* face-mbti */ = {
 			isa = PBXGroup;
 			children = (
+				CFE9A1F62612190E009EB96D /* Models */,
 				F48F0B7F261042740093F1FB /* Views */,
 				F48F0B7B261042350093F1FB /* Resources */,
 				F4F343F8261040F000BD71E1 /* extensions */,
@@ -148,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				F4F343F92610410000BD71E1 /* SwiftUI+Rswift.swift */,
+				CFE9A1F926121EE9009EB96D /* Encodable+jsonString.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -306,12 +320,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE9A1FA26121EE9009EB96D /* Encodable+jsonString.swift in Sources */,
 				F40A9CC32610384A00CC47BA /* AppDelegate.swift in Sources */,
 				F40A9CC52610384A00CC47BA /* SceneDelegate.swift in Sources */,
 				F44B8CE1261051B100E486F3 /* ProfileImage.swift in Sources */,
 				F4F344032610416100BD71E1 /* R.generated.swift in Sources */,
 				F40A9CC72610384A00CC47BA /* UploadView.swift in Sources */,
 				F4F343FA2610410000BD71E1 /* SwiftUI+Rswift.swift in Sources */,
+				CFE9A1F826121950009EB96D /* PredictionResult.swift in Sources */,
 				F48F0BA526104D280093F1FB /* ResultTabView.swift in Sources */,
 				F48F0B9E261044DE0093F1FB /* LoadingView.swift in Sources */,
 			);

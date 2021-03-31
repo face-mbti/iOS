@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  UploadView.swift
 //  face-mbti
 //
 //  Created by 현기엽 on 2021/03/28.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct UploadView: View {
     @State var showLoadingView = false
 
     var body: some View {
@@ -44,6 +44,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        UploadView()
     }
 }
