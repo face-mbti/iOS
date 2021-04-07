@@ -14,8 +14,8 @@ struct UploadView: View {
         NavigationView {
             ZStack {
                 VStack(spacing: 0) {
-                    R.color.primary.color
-                    R.color.seconary.color
+                    R.color.blue.color
+                    R.color.green.color
                 }.ignoresSafeArea()
                 VStack {
                     Image(systemName: "photo")

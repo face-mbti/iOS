@@ -21,7 +21,7 @@ struct ProfileImage: View {
                 RoundedRectangle(cornerRadius: 136 / 2)
                     .stroke(
                         LinearGradient(
-                            gradient: Gradient(colors: [R.color.orange.color, R.color.purple.color]),
+                            gradient: Gradient(colors: [R.color.blue.color, R.color.green.color]),
                             startPoint: .top,
                             endPoint: .bottom
                         ),

@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1E29DE9031F1F3EFF2CD09A4 /* Pods_face_mbti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B805EFF759D1C8EB8DD3A9 /* Pods_face_mbti.framework */; };
+		CC2F6B1D261DF3120027322F /* AllertaStencil.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC2F6B1B261DF3120027322F /* AllertaStencil.ttf */; };
+		CC2F6B24261DF5040027322F /* Garamond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC2F6B23261DF5010027322F /* Garamond.ttf */; };
 		CC461A9D2614B9BD00CF7957 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = CC461A9C2614B9BD00CF7957 /* SwiftUIX */; };
+		CCFB9705261DF99B00B6443E /* face_mbtiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB9704261DF99B00B6443E /* face_mbtiTests.swift */; };
 		CFE9A1F826121950009EB96D /* PredictionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9A1F726121950009EB96D /* PredictionResult.swift */; };
 		CFE9A1FA26121EE9009EB96D /* Encodable+jsonString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9A1F926121EE9009EB96D /* Encodable+jsonString.swift */; };
 		F40A9CC32610384A00CC47BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40A9CC22610384A00CC47BA /* AppDelegate.swift */; };
@@ -26,8 +29,23 @@
 		F4F344032610416100BD71E1 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F344022610416100BD71E1 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CCFB9707261DF99B00B6443E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F40A9CB72610384A00CC47BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F40A9CBE2610384A00CC47BA;
+			remoteInfo = "face-mbti";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		13B805EFF759D1C8EB8DD3A9 /* Pods_face_mbti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_face_mbti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC2F6B1B261DF3120027322F /* AllertaStencil.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AllertaStencil.ttf; sourceTree = "<group>"; };
+		CC2F6B23261DF5010027322F /* Garamond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Garamond.ttf; sourceTree = "<group>"; };
+		CCFB9702261DF99B00B6443E /* face-mbtiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "face-mbtiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCFB9704261DF99B00B6443E /* face_mbtiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = face_mbtiTests.swift; sourceTree = "<group>"; };
+		CCFB9706261DF99B00B6443E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFE9A1F726121950009EB96D /* PredictionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionResult.swift; sourceTree = "<group>"; };
 		CFE9A1F926121EE9009EB96D /* Encodable+jsonString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+jsonString.swift"; sourceTree = "<group>"; };
 		E6C272E5954487F4A497772F /* Pods-face-mbti.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-face-mbti.debug.xcconfig"; path = "Target Support Files/Pods-face-mbti/Pods-face-mbti.debug.xcconfig"; sourceTree = "<group>"; };
@@ -50,6 +68,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CCFB96FF261DF99B00B6443E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F40A9CBC2610384A00CC47BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,6 +104,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CC2F6B21261DF3390027322F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CC2F6B1B261DF3120027322F /* AllertaStencil.ttf */,
+				CC2F6B23261DF5010027322F /* Garamond.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CCFB9703261DF99B00B6443E /* face-mbtiTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCFB9704261DF99B00B6443E /* face_mbtiTests.swift */,
+				CCFB9706261DF99B00B6443E /* Info.plist */,
+			);
+			path = "face-mbtiTests";
+			sourceTree = "<group>";
+		};
 		CFE9A1F62612190E009EB96D /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +135,7 @@
 			children = (
 				F48F0B8C261043600093F1FB /* .swiftlint.yml */,
 				F40A9CC12610384A00CC47BA /* face-mbti */,
+				CCFB9703261DF99B00B6443E /* face-mbtiTests */,
 				F40A9CC02610384A00CC47BA /* Products */,
 				5CC29EC3C86E9C82EBC78660 /* Pods */,
 				5BCFC10B42D2435C211C591B /* Frameworks */,
@@ -102,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				F40A9CBF2610384A00CC47BA /* face-mbti.app */,
+				CCFB9702261DF99B00B6443E /* face-mbtiTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,6 +179,7 @@
 		F48F0B7B261042350093F1FB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CC2F6B21261DF3390027322F /* Fonts */,
 				F49C614326103DA100457697 /* Assets.xcassets */,
 				F49C613F26103D9900457697 /* Colors.xcassets */,
 			);
@@ -171,6 +217,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CCFB9701261DF99B00B6443E /* face-mbtiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCFB9709261DF99B00B6443E /* Build configuration list for PBXNativeTarget "face-mbtiTests" */;
+			buildPhases = (
+				CCFB96FE261DF99B00B6443E /* Sources */,
+				CCFB96FF261DF99B00B6443E /* Frameworks */,
+				CCFB9700261DF99B00B6443E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCFB9708261DF99B00B6443E /* PBXTargetDependency */,
+			);
+			name = "face-mbtiTests";
+			productName = "face-mbtiTests";
+			productReference = CCFB9702261DF99B00B6443E /* face-mbtiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F40A9CBE2610384A00CC47BA /* face-mbti */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F40A9CD32610384A00CC47BA /* Build configuration list for PBXNativeTarget "face-mbti" */;
@@ -204,6 +268,10 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					CCFB9701261DF99B00B6443E = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F40A9CBE2610384A00CC47BA;
+					};
 					F40A9CBE2610384A00CC47BA = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -226,19 +294,29 @@
 			projectRoot = "";
 			targets = (
 				F40A9CBE2610384A00CC47BA /* face-mbti */,
+				CCFB9701261DF99B00B6443E /* face-mbtiTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CCFB9700261DF99B00B6443E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F40A9CBD2610384A00CC47BA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2F6B1D261DF3120027322F /* AllertaStencil.ttf in Resources */,
 				F48F0B8D261043600093F1FB /* .swiftlint.yml in Resources */,
 				F40A9CCF2610384A00CC47BA /* LaunchScreen.storyboard in Resources */,
 				F49C614026103D9900457697 /* Colors.xcassets in Resources */,
 				F49C614426103DA100457697 /* Assets.xcassets in Resources */,
+				CC2F6B24261DF5040027322F /* Garamond.ttf in Resources */,
 				F40A9CCC2610384A00CC47BA /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +402,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CCFB96FE261DF99B00B6443E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCFB9705261DF99B00B6443E /* face_mbtiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F40A9CBB2610384A00CC47BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -343,6 +429,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CCFB9708261DF99B00B6443E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F40A9CBE2610384A00CC47BA /* face-mbti */;
+			targetProxy = CCFB9707261DF99B00B6443E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		F40A9CCD2610384A00CC47BA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -355,6 +449,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CCFB970A261DF99B00B6443E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56UXM88S2N;
+				INFOPLIST_FILE = "face-mbtiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.face-mbti.face-mbtiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/face-mbti.app/face-mbti";
+			};
+			name = Debug;
+		};
+		CCFB970B261DF99B00B6443E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56UXM88S2N;
+				INFOPLIST_FILE = "face-mbtiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.face-mbti.face-mbtiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/face-mbti.app/face-mbti";
+			};
+			name = Release;
+		};
 		F40A9CD12610384A00CC47BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -489,7 +623,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.face-mbti.face-mbti";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -511,13 +645,22 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.face-mbti.face-mbti";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CCFB9709261DF99B00B6443E /* Build configuration list for PBXNativeTarget "face-mbtiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCFB970A261DF99B00B6443E /* Debug */,
+				CCFB970B261DF99B00B6443E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F40A9CBA2610384A00CC47BA /* Build configuration list for PBXProject "face-mbti" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

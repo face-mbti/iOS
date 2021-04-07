@@ -85,6 +85,7 @@ struct R: Rswift.Validatable {
   }
 
   static func validate() throws {
+    try font.validate()
     try intern.validate()
   }
 
@@ -105,20 +106,16 @@ struct R: Rswift.Validatable {
   }
   #endif
 
-  /// This `R.color` struct is generated, and contains static references to 7 colors.
+  /// This `R.color` struct is generated, and contains static references to 5 colors.
   struct color {
     /// Color `AccentColor`.
     static let accentColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "AccentColor")
-    /// Color `claret`.
-    static let claret = Rswift.ColorResource(bundle: R.hostingBundle, name: "claret")
-    /// Color `orange`.
-    static let orange = Rswift.ColorResource(bundle: R.hostingBundle, name: "orange")
-    /// Color `primary`.
-    static let primary = Rswift.ColorResource(bundle: R.hostingBundle, name: "primary")
-    /// Color `purple`.
-    static let purple = Rswift.ColorResource(bundle: R.hostingBundle, name: "purple")
-    /// Color `seconary`.
-    static let seconary = Rswift.ColorResource(bundle: R.hostingBundle, name: "seconary")
+    /// Color `blue`.
+    static let blue = Rswift.ColorResource(bundle: R.hostingBundle, name: "blue")
+    /// Color `green`.
+    static let green = Rswift.ColorResource(bundle: R.hostingBundle, name: "green")
+    /// Color `pink`.
+    static let pink = Rswift.ColorResource(bundle: R.hostingBundle, name: "pink")
     /// Color `yellow`.
     static let yellow = Rswift.ColorResource(bundle: R.hostingBundle, name: "yellow")
 
@@ -132,47 +129,29 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
-    /// `UIColor(named: "claret", bundle: ..., traitCollection: ...)`
+    /// `UIColor(named: "blue", bundle: ..., traitCollection: ...)`
     @available(tvOS 11.0, *)
     @available(iOS 11.0, *)
-    static func claret(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
-      return UIKit.UIColor(resource: R.color.claret, compatibleWith: traitCollection)
+    static func blue(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.blue, compatibleWith: traitCollection)
     }
     #endif
 
     #if os(iOS) || os(tvOS)
-    /// `UIColor(named: "orange", bundle: ..., traitCollection: ...)`
+    /// `UIColor(named: "green", bundle: ..., traitCollection: ...)`
     @available(tvOS 11.0, *)
     @available(iOS 11.0, *)
-    static func orange(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
-      return UIKit.UIColor(resource: R.color.orange, compatibleWith: traitCollection)
+    static func green(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.green, compatibleWith: traitCollection)
     }
     #endif
 
     #if os(iOS) || os(tvOS)
-    /// `UIColor(named: "primary", bundle: ..., traitCollection: ...)`
+    /// `UIColor(named: "pink", bundle: ..., traitCollection: ...)`
     @available(tvOS 11.0, *)
     @available(iOS 11.0, *)
-    static func primary(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
-      return UIKit.UIColor(resource: R.color.primary, compatibleWith: traitCollection)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIColor(named: "purple", bundle: ..., traitCollection: ...)`
-    @available(tvOS 11.0, *)
-    @available(iOS 11.0, *)
-    static func purple(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
-      return UIKit.UIColor(resource: R.color.purple, compatibleWith: traitCollection)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIColor(named: "seconary", bundle: ..., traitCollection: ...)`
-    @available(tvOS 11.0, *)
-    @available(iOS 11.0, *)
-    static func seconary(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
-      return UIKit.UIColor(resource: R.color.seconary, compatibleWith: traitCollection)
+    static func pink(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.pink, compatibleWith: traitCollection)
     }
     #endif
 
@@ -194,42 +173,26 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(watchOS)
-    /// `UIColor(named: "claret", bundle: ..., traitCollection: ...)`
+    /// `UIColor(named: "blue", bundle: ..., traitCollection: ...)`
     @available(watchOSApplicationExtension 4.0, *)
-    static func claret(_: Void = ()) -> UIKit.UIColor? {
-      return UIKit.UIColor(named: R.color.claret.name)
+    static func blue(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.blue.name)
     }
     #endif
 
     #if os(watchOS)
-    /// `UIColor(named: "orange", bundle: ..., traitCollection: ...)`
+    /// `UIColor(named: "green", bundle: ..., traitCollection: ...)`
     @available(watchOSApplicationExtension 4.0, *)
-    static func orange(_: Void = ()) -> UIKit.UIColor? {
-      return UIKit.UIColor(named: R.color.orange.name)
+    static func green(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.green.name)
     }
     #endif
 
     #if os(watchOS)
-    /// `UIColor(named: "primary", bundle: ..., traitCollection: ...)`
+    /// `UIColor(named: "pink", bundle: ..., traitCollection: ...)`
     @available(watchOSApplicationExtension 4.0, *)
-    static func primary(_: Void = ()) -> UIKit.UIColor? {
-      return UIKit.UIColor(named: R.color.primary.name)
-    }
-    #endif
-
-    #if os(watchOS)
-    /// `UIColor(named: "purple", bundle: ..., traitCollection: ...)`
-    @available(watchOSApplicationExtension 4.0, *)
-    static func purple(_: Void = ()) -> UIKit.UIColor? {
-      return UIKit.UIColor(named: R.color.purple.name)
-    }
-    #endif
-
-    #if os(watchOS)
-    /// `UIColor(named: "seconary", bundle: ..., traitCollection: ...)`
-    @available(watchOSApplicationExtension 4.0, *)
-    static func seconary(_: Void = ()) -> UIKit.UIColor? {
-      return UIKit.UIColor(named: R.color.seconary.name)
+    static func pink(_: Void = ()) -> UIKit.UIColor? {
+      return UIKit.UIColor(named: R.color.pink.name)
     }
     #endif
 
@@ -244,15 +207,56 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.file` struct is generated, and contains static references to 1 files.
+  /// This `R.file` struct is generated, and contains static references to 3 files.
   struct file {
     /// Resource file `.swiftlint.yml`.
     static let swiftlintYml = Rswift.FileResource(bundle: R.hostingBundle, name: ".swiftlint", pathExtension: "yml")
+    /// Resource file `AllertaStencil.ttf`.
+    static let allertaStencilTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "AllertaStencil", pathExtension: "ttf")
+    /// Resource file `Garamond.ttf`.
+    static let garamondTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Garamond", pathExtension: "ttf")
 
     /// `bundle.url(forResource: ".swiftlint", withExtension: "yml")`
     static func swiftlintYml(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.swiftlintYml
       return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "AllertaStencil", withExtension: "ttf")`
+    static func allertaStencilTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.allertaStencilTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "Garamond", withExtension: "ttf")`
+    static func garamondTtf(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.garamondTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    fileprivate init() {}
+  }
+
+  /// This `R.font` struct is generated, and contains static references to 2 fonts.
+  struct font: Rswift.Validatable {
+    /// Font `AGaramondPro-Regular`.
+    static let aGaramondProRegular = Rswift.FontResource(fontName: "AGaramondPro-Regular")
+    /// Font `AllertaStencil-Regular`.
+    static let allertaStencilRegular = Rswift.FontResource(fontName: "AllertaStencil-Regular")
+
+    /// `UIFont(name: "AGaramondPro-Regular", size: ...)`
+    static func aGaramondProRegular(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: aGaramondProRegular, size: size)
+    }
+
+    /// `UIFont(name: "AllertaStencil-Regular", size: ...)`
+    static func allertaStencilRegular(size: CGFloat) -> UIKit.UIFont? {
+      return UIKit.UIFont(resource: allertaStencilRegular, size: size)
+    }
+
+    static func validate() throws {
+      if R.font.aGaramondProRegular(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AGaramondPro-Regular' could not be loaded, is 'Garamond.ttf' added to the UIAppFonts array in this targets Info.plist?") }
+      if R.font.allertaStencilRegular(size: 42) == nil { throw Rswift.ValidationError(description:"[R.swift] Font 'AllertaStencil-Regular' could not be loaded, is 'AllertaStencil.ttf' added to the UIAppFonts array in this targets Info.plist?") }
     }
 
     fileprivate init() {}
