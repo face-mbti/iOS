@@ -54,20 +54,30 @@ struct CircledCharacter: View {
     let type: Type
 
     var body: some View {
-            HStack {
-                Spacer()
-                Text(type.rawValue)
-                    .font(R.font.allertaStencilRegular.font(size: 144))
-                    .foregroundColor(.white)
-            }
-            .background(type.color)
-            .frame(CGSize(width: 145, height: 145))
-            .clipShape(Circle())
+        GeometryReader { geometry in
+            Text(type.rawValue)
+                .font(R.font.allertaStencilRegular.font(size: 144))
+                .foregroundColor(.white)
+                .position(x: geometry.size.width * 0.75, y: geometry.size.height * 0.5)
+        }
+        .background(type.color)
+        .frame(CGSize(width: 145, height: 145))
+        .clipShape(Circle())
+        .shadow(color: Color(hexadecimal: "#8D8AAC"), radius: 10, x: 0, y: 5)
     }
 }
 
 struct LoadingView_Previews: PreviewProvider {
     static var previews: some View {
+        LazyVGrid(columns: [GridItem(), GridItem()], spacing: 25) {
+            ForEach(Type.allCases, id: \.self) { type in
+                CircledCharacter(type: type)
+                    .previewLayout(.sizeThatFits)
+            }
+        }
+        .padding()
+        .previewLayout(.sizeThatFits)
+
         LoadingView()
     }
 }
