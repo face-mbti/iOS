@@ -45,7 +45,29 @@ struct ResultTabView: View {
                             }
                         }
 
-                        PieChartView(data: [70, 13, 17]).frame(width: 126, height: 126)
+                        PieChartView(
+                            data: [70, 13, 17],
+                            accentColors: [.red, .blue, .green],
+                            labels: ["INFP", "ENFP", "ISTJ"]
+                        )
+                        .frame(width: 300, height: 300)
+
+                        VStack {
+                            Text("나와 같은 MBTI를 가진 사람은 누가 있을까요?")
+                                .font(.helvetica(size: 18)).bold()
+                                .foregroundColor(Color(hexadecimal: "3D6560"))
+
+                            ScrollView(.horizontal, showsIndicators: false) {
+                                HStack {
+                                    ForEach(Celebrity.dummy, id: \.name) { celebrity in
+                                        CelebrityCellView(celebrity: celebrity)
+                                            .padding([.leading, .trailing])
+                                    }
+                                }
+                            }
+                        }
+                        .padding()
+                        .background(Color(hexString: "CCE5E2"))
 
                         Button(action: { isSheet = true }, label: { Text("공유하기") })
                             .sheet(isPresented: $isSheet) {
