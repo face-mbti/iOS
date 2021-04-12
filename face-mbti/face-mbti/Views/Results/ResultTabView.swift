@@ -39,8 +39,11 @@ struct ResultTabView: View {
                             .resizable()
                             .frame(width: 120, height: 120)
                         Text("감성이 풍부해 보이는 당신은")
+                            .font(.helvetica(size: 18))
                         Text("INFP")
+                            .font(.helvetica(size: 48)).bold()
                         Text("75%")
+                            .font(.helvetica(size: 24))
 
                         VStack(alignment: .leading) {
                             ForEach(sampleTexts, id: \.self) { text in

@@ -17,6 +17,7 @@
 		CC98893B2621A9BC000A9D09 /* PieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9889372621A9BC000A9D09 /* PieChartCell.swift */; };
 		CC98893C2621A9BC000A9D09 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9889382621A9BC000A9D09 /* PieChartView.swift */; };
 		CC98893D2621A9BC000A9D09 /* PieChartHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9889392621A9BC000A9D09 /* PieChartHelpers.swift */; };
+		CCA333FB262492CE00E80900 /* SwiftUI+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA333FA262492CE00E80900 /* SwiftUI+Font.swift */; };
 		CCFB9705261DF99B00B6443E /* face_mbtiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB9704261DF99B00B6443E /* face_mbtiTests.swift */; };
 		CFE9A1F826121950009EB96D /* PredictionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9A1F726121950009EB96D /* PredictionResult.swift */; };
 		CFE9A1FA26121EE9009EB96D /* Encodable+jsonString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9A1F926121EE9009EB96D /* Encodable+jsonString.swift */; };
@@ -55,6 +56,7 @@
 		CC9889372621A9BC000A9D09 /* PieChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartCell.swift; sourceTree = "<group>"; };
 		CC9889382621A9BC000A9D09 /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		CC9889392621A9BC000A9D09 /* PieChartHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartHelpers.swift; sourceTree = "<group>"; };
+		CCA333FA262492CE00E80900 /* SwiftUI+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+Font.swift"; sourceTree = "<group>"; };
 		CCFB9702261DF99B00B6443E /* face-mbtiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "face-mbtiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFB9704261DF99B00B6443E /* face_mbtiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = face_mbtiTests.swift; sourceTree = "<group>"; };
 		CCFB9706261DF99B00B6443E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				F4F343F92610410000BD71E1 /* SwiftUI+Rswift.swift */,
 				CFE9A1F926121EE9009EB96D /* Encodable+jsonString.swift */,
 				CC68B50B2621B23B000942F6 /* SwiftUI+AlamofireImage.swift */,
+				CCA333FA262492CE00E80900 /* SwiftUI+Font.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 				F4F344032610416100BD71E1 /* R.generated.swift in Sources */,
 				CC98893B2621A9BC000A9D09 /* PieChartCell.swift in Sources */,
 				F40A9CC72610384A00CC47BA /* UploadView.swift in Sources */,
+				CCA333FB262492CE00E80900 /* SwiftUI+Font.swift in Sources */,
 				F4F343FA2610410000BD71E1 /* SwiftUI+Rswift.swift in Sources */,
 				CFE9A1F826121950009EB96D /* PredictionResult.swift in Sources */,
 				F48F0BA526104D280093F1FB /* ResultTabView.swift in Sources */,

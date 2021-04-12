@@ -21,11 +21,11 @@ struct UploadView: View {
                 VStack(spacing: 8) {
                     Text("당신의 MBTI는?")
                         .foregroundColor(.white)
-                        .font(.custom("Helvetica", size: 48)).bold()
+                        .font(.helvetica(size: 48)).bold()
 
                     Text("사진을 업로드해주세요")
                         .foregroundColor(.white)
-                        .font(.custom("Helvetica", size: 22)).bold()
+                        .font(.helvetica(size: 22)).bold()
 
                     ZStack {
                         Circle()
