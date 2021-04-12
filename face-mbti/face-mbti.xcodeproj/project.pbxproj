@@ -18,6 +18,8 @@
 		CC98893C2621A9BC000A9D09 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9889382621A9BC000A9D09 /* PieChartView.swift */; };
 		CC98893D2621A9BC000A9D09 /* PieChartHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9889392621A9BC000A9D09 /* PieChartHelpers.swift */; };
 		CCA333FB262492CE00E80900 /* SwiftUI+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA333FA262492CE00E80900 /* SwiftUI+Font.swift */; };
+		CCB06A812622080F0024ABE7 /* CelebrityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB06A802622080F0024ABE7 /* CelebrityView.swift */; };
+		CCB06A85262208570024ABE7 /* Celebrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB06A84262208570024ABE7 /* Celebrity.swift */; };
 		CCFB9705261DF99B00B6443E /* face_mbtiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB9704261DF99B00B6443E /* face_mbtiTests.swift */; };
 		CFE9A1F826121950009EB96D /* PredictionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9A1F726121950009EB96D /* PredictionResult.swift */; };
 		CFE9A1FA26121EE9009EB96D /* Encodable+jsonString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9A1F926121EE9009EB96D /* Encodable+jsonString.swift */; };
@@ -26,7 +28,6 @@
 		F40A9CC72610384A00CC47BA /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40A9CC62610384A00CC47BA /* UploadView.swift */; };
 		F40A9CCC2610384A00CC47BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F40A9CCB2610384A00CC47BA /* Preview Assets.xcassets */; };
 		F40A9CCF2610384A00CC47BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F40A9CCD2610384A00CC47BA /* LaunchScreen.storyboard */; };
-		F44B8CE1261051B100E486F3 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B8CE0261051B100E486F3 /* ProfileImage.swift */; };
 		F48F0B8D261043600093F1FB /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F48F0B8C261043600093F1FB /* .swiftlint.yml */; };
 		F48F0B9E261044DE0093F1FB /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48F0B9D261044DE0093F1FB /* LoadingView.swift */; };
 		F48F0BA526104D280093F1FB /* ResultTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48F0BA426104D280093F1FB /* ResultTabView.swift */; };
@@ -57,6 +58,8 @@
 		CC9889382621A9BC000A9D09 /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		CC9889392621A9BC000A9D09 /* PieChartHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartHelpers.swift; sourceTree = "<group>"; };
 		CCA333FA262492CE00E80900 /* SwiftUI+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+Font.swift"; sourceTree = "<group>"; };
+		CCB06A802622080F0024ABE7 /* CelebrityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrityView.swift; sourceTree = "<group>"; };
+		CCB06A84262208570024ABE7 /* Celebrity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celebrity.swift; sourceTree = "<group>"; };
 		CCFB9702261DF99B00B6443E /* face-mbtiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "face-mbtiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFB9704261DF99B00B6443E /* face_mbtiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = face_mbtiTests.swift; sourceTree = "<group>"; };
 		CCFB9706261DF99B00B6443E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,7 +73,6 @@
 		F40A9CCB2610384A00CC47BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F40A9CCE2610384A00CC47BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F40A9CD02610384A00CC47BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F44B8CE0261051B100E486F3 /* ProfileImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
 		F48F0B8C261043600093F1FB /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		F48F0B9D261044DE0093F1FB /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		F48F0BA426104D280093F1FB /* ResultTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTabView.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				CFE9A1F726121950009EB96D /* PredictionResult.swift */,
+				CCB06A84262208570024ABE7 /* Celebrity.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -234,8 +237,8 @@
 		F48F0BA2261047E20093F1FB /* Results */ = {
 			isa = PBXGroup;
 			children = (
-				F44B8CE0261051B100E486F3 /* ProfileImage.swift */,
 				F48F0BA426104D280093F1FB /* ResultTabView.swift */,
+				CCB06A802622080F0024ABE7 /* CelebrityView.swift */,
 			);
 			path = Results;
 			sourceTree = "<group>";
@@ -458,12 +461,13 @@
 				CFE9A1FA26121EE9009EB96D /* Encodable+jsonString.swift in Sources */,
 				F40A9CC32610384A00CC47BA /* AppDelegate.swift in Sources */,
 				F40A9CC52610384A00CC47BA /* SceneDelegate.swift in Sources */,
-				F44B8CE1261051B100E486F3 /* ProfileImage.swift in Sources */,
 				CC98892F2621A980000A9D09 /* Helpers.swift in Sources */,
 				F4F344032610416100BD71E1 /* R.generated.swift in Sources */,
 				CC98893B2621A9BC000A9D09 /* PieChartCell.swift in Sources */,
 				F40A9CC72610384A00CC47BA /* UploadView.swift in Sources */,
+				CCB06A812622080F0024ABE7 /* CelebrityView.swift in Sources */,
 				CCA333FB262492CE00E80900 /* SwiftUI+Font.swift in Sources */,
+				CCB06A85262208570024ABE7 /* Celebrity.swift in Sources */,
 				F4F343FA2610410000BD71E1 /* SwiftUI+Rswift.swift in Sources */,
 				CFE9A1F826121950009EB96D /* PredictionResult.swift in Sources */,
 				F48F0BA526104D280093F1FB /* ResultTabView.swift in Sources */,
