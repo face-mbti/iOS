@@ -31,7 +31,9 @@ struct ResultTabView: View {
                     VStack {
                         R.image.sampleProfile.image
                             .resizable()
-                            .frame(width: 120, height: 120)
+                            .aspectRatio(1, contentMode: .fit)
+                            .padding()
+
                         Text("감성이 풍부해 보이는 당신은")
                             .font(.helvetica(size: 18))
                         Text("INFP")
@@ -45,12 +47,18 @@ struct ResultTabView: View {
                             }
                         }
 
-                        PieChartView(
-                            data: [70, 13, 17],
-                            accentColors: [.red, .blue, .green],
-                            labels: ["INFP", "ENFP", "ISTJ"]
-                        )
-                        .frame(width: 300, height: 300)
+                        VStack {
+                            LineChartsView()
+
+                            PieChartView(
+                                data: [70, 13, 17],
+                                accentColors: [Color(hexString: "#7C85CF"), Color(hexString: "#84E8C4"), Color(hexString: "#C4C4C4")],
+                                labels: ["INFP\n75%", "ENFP\n13%", "ISTJ\n17%"]
+                            )
+                            .frame(width: 300, height: 300)
+                        }
+                        .padding()
+                        .foregroundColor(Color(hexString: "F6F6F6"))
 
                         VStack {
                             Text("나와 같은 MBTI를 가진 사람은 누가 있을까요?")
@@ -87,6 +95,37 @@ struct ResultTabView: View {
                     }
             }
         }.navigationBarHidden(true)
+    }
+}
+
+struct LineChartsView: View {
+    var body: some View {
+        HStack {
+            Spacer()
+            LineChartView(items: [
+                .init(name: "E", value: 0.34, color: Color(hexString: "7C85CF")),
+                .init(name: "I", value: 0.66, color: Color(hexString: "84E8C4"))
+            ])
+
+            Spacer()
+            LineChartView(items: [
+                .init(name: "N", value: 0.8, color: Color(hexString: "7C85CF")),
+                .init(name: "S", value: 0.2, color: Color(hexString: "84E8C4"))
+            ])
+
+            Spacer()
+            LineChartView(items: [
+                .init(name: "T", value: 0.3, color: Color(hexString: "7C85CF")),
+                .init(name: "F", value: 0.7, color: Color(hexString: "84E8C4"))
+            ])
+
+            Spacer()
+            LineChartView(items: [
+                .init(name: "P", value: 0.6, color: Color(hexString: "7C85CF")),
+                .init(name: "J", value: 0.4, color: Color(hexString: "84E8C4"))
+            ])
+            Spacer()
+        }
     }
 }
 

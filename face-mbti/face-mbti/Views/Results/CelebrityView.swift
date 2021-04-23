@@ -14,6 +14,7 @@ struct CelebrityCellView: View {
     var body: some View {
         VStack {
             RemoteImage(url: celebrity.imageURL)
+                .aspectRatio(1, contentMode: .fit)
                 .frame(width: 150, height: 150)
             Text(celebrity.occupation)
                 .foregroundColor(textColor)

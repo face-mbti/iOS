@@ -51,7 +51,6 @@ public struct PieChartView: View {
 
     public var body: some View {
         PieChartRow(data: data, accentColors: accentColors, labels: labels, showValue: $showValue, currentValue: $currentValue)
-            .rotationEffect(.degrees(45))
     }
 }
 

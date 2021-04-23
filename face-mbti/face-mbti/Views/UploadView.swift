@@ -13,20 +13,20 @@ struct UploadView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                VStack(spacing: 0) {
-                    R.color.blue.color
-                    R.color.green.color
-                }.ignoresSafeArea()
+                LinearGradient(gradient: Gradient(colors: [
+                                                    Color(.displayP3, red: 152 / 256, green: 248 / 256, blue: 208 / 256, opacity: 1), Color(.displayP3, red: 104 / 256, green: 173 / 256, blue: 241 / 256, opacity: 1)]), startPoint: .top, endPoint: .bottom)
+                    .ignoresSafeArea()
 
-                VStack(spacing: 8) {
-                    Text("당신의 MBTI는?")
-                        .foregroundColor(.white)
-                        .font(.helvetica(size: 48)).bold()
+                VStack(spacing: 32) {
+                    VStack(spacing: 8) {
+                        Text("당신의 MBTI는?")
+                            .foregroundColor(.white)
+                            .font(.helvetica(size: 48)).bold()
 
-                    Text("사진을 업로드해주세요")
-                        .foregroundColor(.white)
-                        .font(.helvetica(size: 22)).bold()
-
+                        Text("사진을 업로드해주세요")
+                            .foregroundColor(.white)
+                            .font(.helvetica(size: 22)).bold()
+                    }
                     ZStack {
                         Circle()
                             .frame(width: 219, height: 219)
@@ -37,8 +37,16 @@ struct UploadView: View {
                             .resizable()
                             .frame(width: 120, height: 90)
                     }
+                    Text("UPLOAD")
+                        .font(.helvetica(size: 22)).bold()
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(width: 233, height: 61, alignment: .center)
+                        .background(Color(hexString: "4181B0"))
+                        .cornerRadius(30.5)
                 }
                 NavigationLink("", destination: LoadingView(), isActive: $showLoadingView)
+
             }.onAppear {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                     showLoadingView = true

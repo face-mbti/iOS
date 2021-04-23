@@ -20,6 +20,9 @@
 		CCA333FB262492CE00E80900 /* SwiftUI+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA333FA262492CE00E80900 /* SwiftUI+Font.swift */; };
 		CCB06A812622080F0024ABE7 /* CelebrityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB06A802622080F0024ABE7 /* CelebrityView.swift */; };
 		CCB06A85262208570024ABE7 /* Celebrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB06A84262208570024ABE7 /* Celebrity.swift */; };
+		CCB6B2A2262DC906004DF9D1 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB6B2A1262DC906004DF9D1 /* LineChartView.swift */; };
+		CCB6B2A7262DD097004DF9D1 /* LineChartItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB6B2A6262DD097004DF9D1 /* LineChartItemView.swift */; };
+		CCB6B2AB262DD0B2004DF9D1 /* LineChartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB6B2AA262DD0B2004DF9D1 /* LineChartItem.swift */; };
 		CCFB9705261DF99B00B6443E /* face_mbtiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB9704261DF99B00B6443E /* face_mbtiTests.swift */; };
 		CFE9A1F826121950009EB96D /* PredictionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9A1F726121950009EB96D /* PredictionResult.swift */; };
 		CFE9A1FA26121EE9009EB96D /* Encodable+jsonString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9A1F926121EE9009EB96D /* Encodable+jsonString.swift */; };
@@ -60,6 +63,9 @@
 		CCA333FA262492CE00E80900 /* SwiftUI+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+Font.swift"; sourceTree = "<group>"; };
 		CCB06A802622080F0024ABE7 /* CelebrityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrityView.swift; sourceTree = "<group>"; };
 		CCB06A84262208570024ABE7 /* Celebrity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celebrity.swift; sourceTree = "<group>"; };
+		CCB6B2A1262DC906004DF9D1 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		CCB6B2A6262DD097004DF9D1 /* LineChartItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartItemView.swift; sourceTree = "<group>"; };
+		CCB6B2AA262DD0B2004DF9D1 /* LineChartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartItem.swift; sourceTree = "<group>"; };
 		CCFB9702261DF99B00B6443E /* face-mbtiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "face-mbtiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFB9704261DF99B00B6443E /* face_mbtiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = face_mbtiTests.swift; sourceTree = "<group>"; };
 		CCFB9706261DF99B00B6443E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -149,6 +155,16 @@
 			path = PieChart;
 			sourceTree = "<group>";
 		};
+		CCB6B2A0262DC8F1004DF9D1 /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				CCB6B2A1262DC906004DF9D1 /* LineChartView.swift */,
+				CCB6B2A6262DD097004DF9D1 /* LineChartItemView.swift */,
+				CCB6B2AA262DD0B2004DF9D1 /* LineChartItem.swift */,
+			);
+			path = LineChart;
+			sourceTree = "<group>";
+		};
 		CCFB9703261DF99B00B6443E /* face-mbtiTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +207,7 @@
 		F40A9CC12610384A00CC47BA /* face-mbti */ = {
 			isa = PBXGroup;
 			children = (
+				CCB6B2A0262DC8F1004DF9D1 /* LineChart */,
 				CC98892B2621A978000A9D09 /* PieCharts */,
 				CFE9A1F62612190E009EB96D /* Models */,
 				F48F0B7F261042740093F1FB /* Views */,
@@ -460,14 +477,17 @@
 				CC98893A2621A9BC000A9D09 /* PieChartRow.swift in Sources */,
 				CFE9A1FA26121EE9009EB96D /* Encodable+jsonString.swift in Sources */,
 				F40A9CC32610384A00CC47BA /* AppDelegate.swift in Sources */,
+				CCB6B2A7262DD097004DF9D1 /* LineChartItemView.swift in Sources */,
 				F40A9CC52610384A00CC47BA /* SceneDelegate.swift in Sources */,
 				CC98892F2621A980000A9D09 /* Helpers.swift in Sources */,
 				F4F344032610416100BD71E1 /* R.generated.swift in Sources */,
 				CC98893B2621A9BC000A9D09 /* PieChartCell.swift in Sources */,
+				CCB6B2AB262DD0B2004DF9D1 /* LineChartItem.swift in Sources */,
 				F40A9CC72610384A00CC47BA /* UploadView.swift in Sources */,
 				CCB06A812622080F0024ABE7 /* CelebrityView.swift in Sources */,
 				CCA333FB262492CE00E80900 /* SwiftUI+Font.swift in Sources */,
 				CCB06A85262208570024ABE7 /* Celebrity.swift in Sources */,
+				CCB6B2A2262DC906004DF9D1 /* LineChartView.swift in Sources */,
 				F4F343FA2610410000BD71E1 /* SwiftUI+Rswift.swift in Sources */,
 				CFE9A1F826121950009EB96D /* PredictionResult.swift in Sources */,
 				F48F0BA526104D280093F1FB /* ResultTabView.swift in Sources */,
