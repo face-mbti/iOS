@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import SwiftUIX
 
 struct UploadView: View {
-    @State var showLoadingView = false
+    @State var data: Data?
+    @State var showImagePicker = false
 
     var body: some View {
         NavigationView {
@@ -37,20 +39,27 @@ struct UploadView: View {
                             .resizable()
                             .frame(width: 120, height: 90)
                     }
-                    Text("UPLOAD")
-                        .font(.helvetica(size: 22)).bold()
-                        .foregroundColor(.white)
-                        .padding()
-                        .frame(width: 233, height: 61, alignment: .center)
-                        .background(Color(hexString: "4181B0"))
-                        .cornerRadius(30.5)
-                }
-                NavigationLink("", destination: LoadingView(), isActive: $showLoadingView)
 
-            }.onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                    showLoadingView = true
+                    Button(action: {
+                        showImagePicker = true
+                    }) {
+                        Text("UPLOAD")
+                            .font(.helvetica(size: 22)).bold()
+                            .foregroundColor(.white)
+                            .frame(width: 233, height: 61, alignment: .center)
+                    }
+                    .background(Color(hexString: "4181B0"))
+                    .cornerRadius(30.5)
+                    .sheet(isPresented: $showImagePicker) {
+                        ImagePicker(data: $data, encoding: .png)
+                    }
                 }
+                
+                NavigationLink(
+                    "",
+                    destination: LoadingView(),
+                    isActive: Binding(get: { data != nil }, set: { _ in })
+                )
             }
         }
     }
