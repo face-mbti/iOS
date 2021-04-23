@@ -207,7 +207,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.file` struct is generated, and contains static references to 3 files.
+  /// This `R.file` struct is generated, and contains static references to 4 files.
   struct file {
     /// Resource file `.swiftlint.yml`.
     static let swiftlintYml = Rswift.FileResource(bundle: R.hostingBundle, name: ".swiftlint", pathExtension: "yml")
@@ -215,6 +215,8 @@ struct R: Rswift.Validatable {
     static let allertaStencilTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "AllertaStencil", pathExtension: "ttf")
     /// Resource file `Garamond.ttf`.
     static let garamondTtf = Rswift.FileResource(bundle: R.hostingBundle, name: "Garamond", pathExtension: "ttf")
+    /// Resource file `GoogleService-Info.plist`.
+    static let googleServiceInfoPlist = Rswift.FileResource(bundle: R.hostingBundle, name: "GoogleService-Info", pathExtension: "plist")
 
     /// `bundle.url(forResource: ".swiftlint", withExtension: "yml")`
     static func swiftlintYml(_: Void = ()) -> Foundation.URL? {
@@ -231,6 +233,12 @@ struct R: Rswift.Validatable {
     /// `bundle.url(forResource: "Garamond", withExtension: "ttf")`
     static func garamondTtf(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.garamondTtf
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "GoogleService-Info", withExtension: "plist")`
+    static func googleServiceInfoPlist(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.googleServiceInfoPlist
       return fileResource.bundle.url(forResource: fileResource)
     }
 

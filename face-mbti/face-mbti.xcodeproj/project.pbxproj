@@ -12,6 +12,7 @@
 		CC2F6B24261DF5040027322F /* Garamond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC2F6B23261DF5010027322F /* Garamond.ttf */; };
 		CC461A9D2614B9BD00CF7957 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = CC461A9C2614B9BD00CF7957 /* SwiftUIX */; };
 		CC68B50C2621B23B000942F6 /* SwiftUI+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC68B50B2621B23B000942F6 /* SwiftUI+AlamofireImage.swift */; };
+		CC7CBA162632F9060066BD4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC7CBA152632F9060066BD4C /* GoogleService-Info.plist */; };
 		CC98892F2621A980000A9D09 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC98892D2621A980000A9D09 /* Helpers.swift */; };
 		CC98893A2621A9BC000A9D09 /* PieChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9889362621A9BC000A9D09 /* PieChartRow.swift */; };
 		CC98893B2621A9BC000A9D09 /* PieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9889372621A9BC000A9D09 /* PieChartCell.swift */; };
@@ -55,6 +56,7 @@
 		CC2F6B1B261DF3120027322F /* AllertaStencil.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AllertaStencil.ttf; sourceTree = "<group>"; };
 		CC2F6B23261DF5010027322F /* Garamond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Garamond.ttf; sourceTree = "<group>"; };
 		CC68B50B2621B23B000942F6 /* SwiftUI+AlamofireImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+AlamofireImage.swift"; sourceTree = "<group>"; };
+		CC7CBA152632F9060066BD4C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CC98892D2621A980000A9D09 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		CC9889362621A9BC000A9D09 /* PieChartRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartRow.swift; sourceTree = "<group>"; };
 		CC9889372621A9BC000A9D09 /* PieChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartCell.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				F40A9CCD2610384A00CC47BA /* LaunchScreen.storyboard */,
 				F40A9CD02610384A00CC47BA /* Info.plist */,
 				F4F344022610416100BD71E1 /* R.generated.swift */,
+				CC7CBA152632F9060066BD4C /* GoogleService-Info.plist */,
 				F40A9CCA2610384A00CC47BA /* Preview Content */,
 			);
 			path = "face-mbti";
@@ -369,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC2F6B1D261DF3120027322F /* AllertaStencil.ttf in Resources */,
+				CC7CBA162632F9060066BD4C /* GoogleService-Info.plist in Resources */,
 				F48F0B8D261043600093F1FB /* .swiftlint.yml in Resources */,
 				F40A9CCF2610384A00CC47BA /* LaunchScreen.storyboard in Resources */,
 				F49C614026103D9900457697 /* Colors.xcassets in Resources */,
