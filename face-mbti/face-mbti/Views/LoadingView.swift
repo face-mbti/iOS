@@ -23,7 +23,12 @@ struct LoadingView: View {
                 Text("당신의 MBTI를 찾고 있어요")
                     .font(R.font.aGaramondProRegular.font(size: 20))
 
-                NavigationLink("", destination: ResultTabView(), isActive: $showResultTabView)
+                NavigationLink("",
+                               destination: ResultTabView()
+                                .navigationBarTitle("")
+                                .navigationBarHidden(true),
+                               isActive: $showResultTabView
+                )
             }.onAppear {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                     showResultTabView = true
