@@ -13,15 +13,17 @@ struct ResultTabView: View {
 
     var body: some View {
         ScrollView {
-            LazyVStack(spacing: 20) {
+            LazyVStack(spacing: 0) {
                 ResultProfileView()
 
-                VStack(spacing: 12) {
+                LazyVStack(spacing: 12) {
                     ResultLineChartView()
+                        .padding()
                     ResultPieChartView()
+                        .padding()
                 }
                 .padding()
-                .foregroundColor(Color(hexString: "F6F6F6"))
+                .background(Color(hexString: "F6F6F6"))
 
                 ResultCelebrityView()
 
@@ -76,25 +78,25 @@ struct ResultLineChartView: View {
     var body: some View {
         HStack {
             Spacer()
-            LineChartView(items: [
+            LineChartView(index: 0, items: [
                 .init(name: "E", value: 0.34, color: Color(hexString: "7C85CF")),
                 .init(name: "I", value: 0.66, color: Color(hexString: "84E8C4"))
             ])
 
             Spacer()
-            LineChartView(items: [
+            LineChartView(index: 1, items: [
                 .init(name: "N", value: 0.8, color: Color(hexString: "7C85CF")),
                 .init(name: "S", value: 0.2, color: Color(hexString: "84E8C4"))
             ])
 
             Spacer()
-            LineChartView(items: [
+            LineChartView(index: 2, items: [
                 .init(name: "T", value: 0.3, color: Color(hexString: "7C85CF")),
                 .init(name: "F", value: 0.7, color: Color(hexString: "84E8C4"))
             ])
 
             Spacer()
-            LineChartView(items: [
+            LineChartView(index: 3, items: [
                 .init(name: "P", value: 0.6, color: Color(hexString: "7C85CF")),
                 .init(name: "J", value: 0.4, color: Color(hexString: "84E8C4"))
             ])

@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct LineChartItemView: View {
+    let index: Int
     let item: LineChartItem
+    @State var isShow = false
 
     var body: some View {
         VStack(spacing: 7) {
@@ -17,7 +19,11 @@ struct LineChartItemView: View {
                     Spacer(minLength: 0)
                     Rectangle()
                         .foregroundColor(item.color)
-                        .height(geometry.size.height * item.value)
+                        .height(isShow ? geometry.size.height * item.value : 0)
+                        .animation(Animation.spring().delay(0.04 * Double(self.index)))
+                        .onAppear {
+                            self.isShow = true
+                        }
                 }
             }
 
@@ -36,6 +42,7 @@ struct LineChartItemView: View {
 struct LineChartItemView_Previews: PreviewProvider {
     static var previews: some View {
         LineChartItemView(
+            index: 0,
             item: .init(
                 name: "I",
                 value: 1.0,
