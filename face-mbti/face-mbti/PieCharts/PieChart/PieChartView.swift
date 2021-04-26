@@ -57,7 +57,7 @@ public struct PieChartView: View {
 #if DEBUG
 struct PieChartView_Previews: PreviewProvider {
     static var previews: some View {
-        PieChartView(data: [70, 17, 13], accentColors: [.red, .blue, .green], labels: ["a", "b", "c"])
+        PieChartView(data: [70, 25, 5], accentColors: [.red, .blue, .green], labels: ["ISFP\n70%", "ISFP\n25%", "ISFP\n5%"])
     }
 }
 #endif

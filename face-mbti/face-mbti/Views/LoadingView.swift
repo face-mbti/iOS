@@ -22,6 +22,7 @@ struct LoadingView: View {
 
                 Text("당신의 MBTI를 찾고 있어요")
                     .font(R.font.aGaramondProRegular.font(size: 20))
+                    .padding()
 
                 NavigationLink("",
                                destination: ResultTabView()

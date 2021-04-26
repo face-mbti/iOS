@@ -15,6 +15,7 @@ struct ResultTabView: View {
         ScrollView {
             LazyVStack(spacing: 0) {
                 ResultProfileView()
+                    .padding()
 
                 LazyVStack(spacing: 12) {
                     ResultLineChartView()
@@ -38,26 +39,28 @@ struct ResultTabView: View {
 
 struct ResultProfileView: View {
     var body: some View {
-        R.image.sampleProfile.image
-            .resizable()
-            .aspectRatio(1, contentMode: .fit)
-            .padding()
+        VStack(spacing: 20) {
+            R.image.sampleProfile.image
+                .resizable()
+                .aspectRatio(1, contentMode: .fit)
+                .padding()
 
-        VStack {
-            Text("감성이 풍부해 보이는 당신은")
-                .font(.helvetica(size: 18))
+            VStack {
+                Text("감성이 풍부해 보이는 당신은")
+                    .font(.helvetica(size: 18))
 
-            HStack {
-                Text("INFP")
-                    .font(.helvetica(size: 48)).bold()
-                Text("75%")
-                    .font(.helvetica(size: 24))
+                HStack {
+                    Text("INFP")
+                        .font(.helvetica(size: 48)).bold()
+                    Text("75%")
+                        .font(.helvetica(size: 24))
+                }
             }
-        }
 
-        VStack(alignment: .leading, spacing: 8) {
-            ForEach(CharacterTexts.dummmy, id: \.result) { text in
-                text.attributedText
+            VStack(alignment: .leading, spacing: 8) {
+                ForEach(CharacterTexts.dummmy, id: \.result) { text in
+                    text.attributedText
+                }
             }
         }
     }

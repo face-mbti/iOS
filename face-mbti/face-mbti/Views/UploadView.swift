@@ -54,7 +54,7 @@ struct UploadView: View {
                         ImagePicker(data: $data, encoding: .png)
                     }
                 }
-                
+
                 NavigationLink(
                     "",
                     destination: LoadingView(),

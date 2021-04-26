@@ -48,7 +48,7 @@ public struct PieChartCell: View {
                 }
 
             Text(label)
-                .font(.helvetica(size: 24)).bold()
+                .font(.helvetica(size: 18)).bold()
                 .foregroundColor(.white)
                 .position(textPoint(center: rect.mid, radius: radius, startAngle: Angle(degrees: self.startDeg), endAngle: Angle(degrees: self.endDeg)))
         }
@@ -86,6 +86,9 @@ struct PieChartCell_Previews: PreviewProvider {
             PieChartCell(rect: geometry.frame(in: .local), startDeg: 45.0, endDeg: 160.0, index: 0, accentColor: Color(red: 225.0/255.0, green: 97.0/255.0, blue: 76.0/255.0), label: "INFP\n75%")
             }.frame(width: 300, height: 300)
 
+        GeometryReader { geometry in
+            PieChartCell(rect: geometry.frame(in: .local), startDeg: 45.0, endDeg: 90.0, index: 0, accentColor: Color(red: 55.0/255.0, green: 57.0/255.0, blue: 26.0/255.0), label: "INFP 75%")
+            }.frame(width: 300, height: 300)
     }
 }
 #endif
