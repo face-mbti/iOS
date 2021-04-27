@@ -50,6 +50,6 @@ struct LineChartItemView_Previews: PreviewProvider {
             )
         )
         .previewLayout(.sizeThatFits)
-            .frame(width: 30, height: 200, alignment: .center)
+        .frame(width: 30, height: 200, alignment: .center)
     }
 }

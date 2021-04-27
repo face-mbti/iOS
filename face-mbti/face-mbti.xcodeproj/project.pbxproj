@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		1E29DE9031F1F3EFF2CD09A4 /* Pods_face_mbti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B805EFF759D1C8EB8DD3A9 /* Pods_face_mbti.framework */; };
+		CC08EFCA263707B7000920D1 /* Color+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08EFC9263707B7000920D1 /* Color+HexString.swift */; };
+		CC08EFCE263707D1000920D1 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08EFCD263707D1000920D1 /* HapticFeedback.swift */; };
+		CC08F01426370C17000920D1 /* PieSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08F01326370C17000920D1 /* PieSlice.swift */; };
+		CC08F01D26370C91000920D1 /* pieSliceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC08F01C26370C91000920D1 /* pieSliceTests.swift */; };
+		CC0EC56A263866010072E88B /* Collection+Enumerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EC569263866010072E88B /* Collection+Enumerated.swift */; };
 		CC2F6B1D261DF3120027322F /* AllertaStencil.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC2F6B1B261DF3120027322F /* AllertaStencil.ttf */; };
 		CC2F6B24261DF5040027322F /* Garamond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC2F6B23261DF5010027322F /* Garamond.ttf */; };
 		CC461A9D2614B9BD00CF7957 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = CC461A9C2614B9BD00CF7957 /* SwiftUIX */; };
 		CC68B50C2621B23B000942F6 /* SwiftUI+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC68B50B2621B23B000942F6 /* SwiftUI+AlamofireImage.swift */; };
 		CC7CBA162632F9060066BD4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC7CBA152632F9060066BD4C /* GoogleService-Info.plist */; };
 		CC89D97E26331313003E5180 /* CharacterText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC89D97D26331313003E5180 /* CharacterText.swift */; };
-		CC98892F2621A980000A9D09 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC98892D2621A980000A9D09 /* Helpers.swift */; };
 		CC98893A2621A9BC000A9D09 /* PieChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9889362621A9BC000A9D09 /* PieChartRow.swift */; };
 		CC98893B2621A9BC000A9D09 /* PieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9889372621A9BC000A9D09 /* PieChartCell.swift */; };
 		CC98893C2621A9BC000A9D09 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9889382621A9BC000A9D09 /* PieChartView.swift */; };
-		CC98893D2621A9BC000A9D09 /* PieChartHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9889392621A9BC000A9D09 /* PieChartHelpers.swift */; };
+		CC98893D2621A9BC000A9D09 /* Geometry++.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9889392621A9BC000A9D09 /* Geometry++.swift */; };
 		CCA333FB262492CE00E80900 /* SwiftUI+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA333FA262492CE00E80900 /* SwiftUI+Font.swift */; };
 		CCB06A812622080F0024ABE7 /* CelebrityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB06A802622080F0024ABE7 /* CelebrityView.swift */; };
 		CCB06A85262208570024ABE7 /* Celebrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB06A84262208570024ABE7 /* Celebrity.swift */; };
@@ -54,16 +58,20 @@
 
 /* Begin PBXFileReference section */
 		13B805EFF759D1C8EB8DD3A9 /* Pods_face_mbti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_face_mbti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC08EFC9263707B7000920D1 /* Color+HexString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+HexString.swift"; sourceTree = "<group>"; };
+		CC08EFCD263707D1000920D1 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
+		CC08F01326370C17000920D1 /* PieSlice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieSlice.swift; sourceTree = "<group>"; };
+		CC08F01C26370C91000920D1 /* pieSliceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pieSliceTests.swift; sourceTree = "<group>"; };
+		CC0EC569263866010072E88B /* Collection+Enumerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Enumerated.swift"; sourceTree = "<group>"; };
 		CC2F6B1B261DF3120027322F /* AllertaStencil.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AllertaStencil.ttf; sourceTree = "<group>"; };
 		CC2F6B23261DF5010027322F /* Garamond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Garamond.ttf; sourceTree = "<group>"; };
 		CC68B50B2621B23B000942F6 /* SwiftUI+AlamofireImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+AlamofireImage.swift"; sourceTree = "<group>"; };
 		CC7CBA152632F9060066BD4C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CC89D97D26331313003E5180 /* CharacterText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterText.swift; sourceTree = "<group>"; };
-		CC98892D2621A980000A9D09 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		CC9889362621A9BC000A9D09 /* PieChartRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartRow.swift; sourceTree = "<group>"; };
 		CC9889372621A9BC000A9D09 /* PieChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartCell.swift; sourceTree = "<group>"; };
 		CC9889382621A9BC000A9D09 /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
-		CC9889392621A9BC000A9D09 /* PieChartHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartHelpers.swift; sourceTree = "<group>"; };
+		CC9889392621A9BC000A9D09 /* Geometry++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Geometry++.swift"; sourceTree = "<group>"; };
 		CCA333FA262492CE00E80900 /* SwiftUI+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+Font.swift"; sourceTree = "<group>"; };
 		CCB06A802622080F0024ABE7 /* CelebrityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrityView.swift; sourceTree = "<group>"; };
 		CCB06A84262208570024ABE7 /* Celebrity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celebrity.swift; sourceTree = "<group>"; };
@@ -130,6 +138,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CC08EFD526370988000920D1 /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				CC08F01C26370C91000920D1 /* pieSliceTests.swift */,
+			);
+			path = PieChart;
+			sourceTree = "<group>";
+		};
 		CC2F6B21261DF3390027322F /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,22 +155,13 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		CC98892B2621A978000A9D09 /* PieCharts */ = {
-			isa = PBXGroup;
-			children = (
-				CC98892D2621A980000A9D09 /* Helpers.swift */,
-				CC9889352621A99F000A9D09 /* PieChart */,
-			);
-			path = PieCharts;
-			sourceTree = "<group>";
-		};
 		CC9889352621A99F000A9D09 /* PieChart */ = {
 			isa = PBXGroup;
 			children = (
 				CC9889372621A9BC000A9D09 /* PieChartCell.swift */,
-				CC9889392621A9BC000A9D09 /* PieChartHelpers.swift */,
 				CC9889362621A9BC000A9D09 /* PieChartRow.swift */,
 				CC9889382621A9BC000A9D09 /* PieChartView.swift */,
+				CC08F01326370C17000920D1 /* PieSlice.swift */,
 			);
 			path = PieChart;
 			sourceTree = "<group>";
@@ -172,6 +179,7 @@
 		CCFB9703261DF99B00B6443E /* face-mbtiTests */ = {
 			isa = PBXGroup;
 			children = (
+				CC08EFD526370988000920D1 /* PieChart */,
 				CCFB9704261DF99B00B6443E /* face_mbtiTests.swift */,
 				CCFB9706261DF99B00B6443E /* Info.plist */,
 			);
@@ -212,11 +220,11 @@
 			isa = PBXGroup;
 			children = (
 				CCB6B2A0262DC8F1004DF9D1 /* LineChart */,
-				CC98892B2621A978000A9D09 /* PieCharts */,
+				CC9889352621A99F000A9D09 /* PieChart */,
 				CFE9A1F62612190E009EB96D /* Models */,
 				F48F0B7F261042740093F1FB /* Views */,
 				F48F0B7B261042350093F1FB /* Resources */,
-				F4F343F8261040F000BD71E1 /* extensions */,
+				F4F343F8261040F000BD71E1 /* Utility */,
 				F40A9CC22610384A00CC47BA /* AppDelegate.swift */,
 				F40A9CC42610384A00CC47BA /* SceneDelegate.swift */,
 				F40A9CCD2610384A00CC47BA /* LaunchScreen.storyboard */,
@@ -266,15 +274,19 @@
 			path = Results;
 			sourceTree = "<group>";
 		};
-		F4F343F8261040F000BD71E1 /* extensions */ = {
+		F4F343F8261040F000BD71E1 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
 				F4F343F92610410000BD71E1 /* SwiftUI+Rswift.swift */,
 				CFE9A1F926121EE9009EB96D /* Encodable+jsonString.swift */,
 				CC68B50B2621B23B000942F6 /* SwiftUI+AlamofireImage.swift */,
 				CCA333FA262492CE00E80900 /* SwiftUI+Font.swift */,
+				CC08EFC9263707B7000920D1 /* Color+HexString.swift */,
+				CC08EFCD263707D1000920D1 /* HapticFeedback.swift */,
+				CC9889392621A9BC000A9D09 /* Geometry++.swift */,
+				CC0EC569263866010072E88B /* Collection+Enumerated.swift */,
 			);
-			path = extensions;
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -471,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCFB9705261DF99B00B6443E /* face_mbtiTests.swift in Sources */,
+				CC08F01D26370C91000920D1 /* pieSliceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,23 +492,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC68B50C2621B23B000942F6 /* SwiftUI+AlamofireImage.swift in Sources */,
-				CC98893D2621A9BC000A9D09 /* PieChartHelpers.swift in Sources */,
+				CC98893D2621A9BC000A9D09 /* Geometry++.swift in Sources */,
 				CC98893C2621A9BC000A9D09 /* PieChartView.swift in Sources */,
 				CC98893A2621A9BC000A9D09 /* PieChartRow.swift in Sources */,
 				CFE9A1FA26121EE9009EB96D /* Encodable+jsonString.swift in Sources */,
 				F40A9CC32610384A00CC47BA /* AppDelegate.swift in Sources */,
 				CCB6B2A7262DD097004DF9D1 /* LineChartItemView.swift in Sources */,
 				F40A9CC52610384A00CC47BA /* SceneDelegate.swift in Sources */,
-				CC98892F2621A980000A9D09 /* Helpers.swift in Sources */,
 				F4F344032610416100BD71E1 /* R.generated.swift in Sources */,
 				CC98893B2621A9BC000A9D09 /* PieChartCell.swift in Sources */,
 				CCB6B2AB262DD0B2004DF9D1 /* LineChartItem.swift in Sources */,
 				F40A9CC72610384A00CC47BA /* UploadView.swift in Sources */,
+				CC08EFCE263707D1000920D1 /* HapticFeedback.swift in Sources */,
 				CCB06A812622080F0024ABE7 /* CelebrityView.swift in Sources */,
 				CCA333FB262492CE00E80900 /* SwiftUI+Font.swift in Sources */,
 				CCB06A85262208570024ABE7 /* Celebrity.swift in Sources */,
+				CC0EC56A263866010072E88B /* Collection+Enumerated.swift in Sources */,
 				CCB6B2A2262DC906004DF9D1 /* LineChartView.swift in Sources */,
+				CC08EFCA263707B7000920D1 /* Color+HexString.swift in Sources */,
 				F4F343FA2610410000BD71E1 /* SwiftUI+Rswift.swift in Sources */,
+				CC08F01426370C17000920D1 /* PieSlice.swift in Sources */,
 				CC89D97E26331313003E5180 /* CharacterText.swift in Sources */,
 				CFE9A1F826121950009EB96D /* PredictionResult.swift in Sources */,
 				F48F0BA526104D280093F1FB /* ResultTabView.swift in Sources */,
@@ -531,6 +547,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56UXM88S2N;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/Pods/Firebase/CoreOnly/Sources";
 				INFOPLIST_FILE = "face-mbtiTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -551,6 +568,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56UXM88S2N;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/Pods/Firebase/CoreOnly/Sources";
 				INFOPLIST_FILE = "face-mbtiTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

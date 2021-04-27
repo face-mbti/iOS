@@ -13,7 +13,7 @@ struct LineChartView: View {
 
     var body: some View {
         HStack(spacing: 0) {
-            ForEach(Array(items.enumerated()), id: \.element.name) { index, item in
+            ForEach(items.enumeratedArray(), id: \.element.name) { index, item in
                 LineChartItemView(index: self.index * items.count + index, item: item)
             }
         }
