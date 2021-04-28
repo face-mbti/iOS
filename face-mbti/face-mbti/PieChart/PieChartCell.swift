@@ -32,7 +32,7 @@ public struct PieChartCell: View {
             path
                 .fill()
                 .foregroundColor(self.accentColor)
-                .overlay(path.stroke(Color.white, lineWidth: 3))
+                .overlay(path.stroke(Color.gray960, lineWidth: 3))
                 .scaleEffect(self.isShow ? 1 : 0)
                 .animation(Animation.spring().delay(Double(self.index) * 0.04))
                 .onAppear {
@@ -60,11 +60,11 @@ public struct PieChartCell: View {
 struct PieChartCell_Previews: PreviewProvider {
     static var previews: some View {
         GeometryReader { geometry in
-            PieChartCell(rect: geometry.frame(in: .local), startAngle: Angle(degrees: 45.0), endAngle: Angle(degrees: 160.0), index: 0, accentColor: Color(red: 225.0/255.0, green: 97.0/255.0, blue: 76.0/255.0), label: "INFP\n75%")
+            PieChartCell(rect: geometry.frame(in: .local), startAngle: Angle(degrees: 45.0), endAngle: Angle(degrees: 160.0), index: 0, accentColor: .chartBlue, label: "INFP\n75%")
             }.frame(width: 300, height: 300)
 
         GeometryReader { geometry in
-            PieChartCell(rect: geometry.frame(in: .local), startAngle: Angle(degrees: 45.0), endAngle: Angle(degrees: 90.0), index: 0, accentColor: Color(red: 55.0/255.0, green: 57.0/255.0, blue: 26.0/255.0), label: "INFP 75%")
+            PieChartCell(rect: geometry.frame(in: .local), startAngle: Angle(degrees: 45.0), endAngle: Angle(degrees: 90.0), index: 0, accentColor: .chartGreen, label: "INFP 75%")
             }.frame(width: 300, height: 300)
     }
 }

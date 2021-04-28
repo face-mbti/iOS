@@ -28,11 +28,11 @@ struct LineChartItemView: View {
             }
 
             Rectangle()
-                .foregroundColor(Color(red: 0.24, green: 0.24, blue: 0.24))
+                .foregroundColor(.gray240)
                 .height(0.5)
 
             Text(item.name)
-                .foregroundColor(Color.init(hexString: "3E3E3E"))
+                .foregroundColor(.gray240)
                 .font(.helvetica(size: 24))
                 .bold()
         }
@@ -46,7 +46,7 @@ struct LineChartItemView_Previews: PreviewProvider {
             item: .init(
                 name: "I",
                 value: 1.0,
-                color: Color(hexString: "84E8C4")
+                color: .chartGreen
             )
         )
         .previewLayout(.sizeThatFits)

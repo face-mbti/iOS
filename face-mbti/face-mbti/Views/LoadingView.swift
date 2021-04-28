@@ -69,7 +69,7 @@ struct CircledCharacter: View {
         .background(type.color)
         .frame(CGSize(width: 145, height: 145))
         .clipShape(Circle())
-        .shadow(color: Color(hexadecimal: "#8D8AAC"), radius: 10, x: 0, y: 5)
+        .shadow(color: .gray550, radius: 10, x: 0, y: 5)
     }
 }
 

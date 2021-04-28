@@ -24,7 +24,7 @@ struct ResultTabView: View {
                         .padding()
                 }
                 .padding()
-                .background(Color(hexString: "F6F6F6"))
+                .background(.gray960)
 
                 ResultCelebrityView()
 
@@ -70,7 +70,7 @@ struct ResultPieChartView: View {
     var body: some View {
         PieChartView(
             data: [70, 13, 17],
-            accentColors: [Color(hexString: "#7C85CF"), Color(hexString: "#84E8C4"), Color(hexString: "#C4C4C4")],
+            accentColors: [.chartBlue, .chartGreen, .gray765],
             labels: ["INFP\n75%", "ENFP\n13%", "ISTJ\n17%"]
         )
         .frame(width: 300, height: 300)
@@ -82,26 +82,26 @@ struct ResultLineChartView: View {
         HStack {
             Spacer()
             LineChartView(index: 0, items: [
-                .init(name: "E", value: 0.34, color: Color(hexString: "7C85CF")),
-                .init(name: "I", value: 0.66, color: Color(hexString: "84E8C4"))
+                .init(name: "E", value: 0.34, color: .chartBlue),
+                .init(name: "I", value: 0.66, color: .chartGreen)
             ])
 
             Spacer()
             LineChartView(index: 1, items: [
-                .init(name: "N", value: 0.8, color: Color(hexString: "7C85CF")),
-                .init(name: "S", value: 0.2, color: Color(hexString: "84E8C4"))
+                .init(name: "N", value: 0.8, color: .chartBlue),
+                .init(name: "S", value: 0.2, color: .chartGreen)
             ])
 
             Spacer()
             LineChartView(index: 2, items: [
-                .init(name: "T", value: 0.3, color: Color(hexString: "7C85CF")),
-                .init(name: "F", value: 0.7, color: Color(hexString: "84E8C4"))
+                .init(name: "T", value: 0.3, color: .chartBlue),
+                .init(name: "F", value: 0.7, color: .chartGreen)
             ])
 
             Spacer()
             LineChartView(index: 3, items: [
-                .init(name: "P", value: 0.6, color: Color(hexString: "7C85CF")),
-                .init(name: "J", value: 0.4, color: Color(hexString: "84E8C4"))
+                .init(name: "P", value: 0.6, color: .chartBlue),
+                .init(name: "J", value: 0.4, color: .chartGreen)
             ])
             Spacer()
         }
@@ -113,7 +113,7 @@ struct ResultCelebrityView: View {
         VStack {
             Text("나와 같은 MBTI를 가진 사람은 누가 있을까요?")
                 .font(.helvetica(size: 18)).bold()
-                .foregroundColor(Color(hexadecimal: "3D6560"))
+                .foregroundColor(.darkGreen)
 
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHStack {
@@ -125,7 +125,7 @@ struct ResultCelebrityView: View {
             }
         }
         .padding()
-        .background(Color(hexString: "CCE5E2"))
+        .background(.lightJade)
     }
 }
 

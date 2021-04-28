@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CelebrityCellView: View {
     let celebrity: Celebrity
-    let textColor = Color(hexString: "3D6560")
+    let textColor = Color.darkGreen
 
     var body: some View {
         VStack {

@@ -24,8 +24,8 @@ struct LineChartView: View {
 struct LineChartView_Previews: PreviewProvider {
     static var previews: some View {
         LineChartView(index: 0, items: [
-            .init(name: "E", value: 0.1, color: Color(hexString: "7C85CF")),
-            .init(name: "I", value: 1.0, color: Color(hexString: "84E8C4"))
+            .init(name: "E", value: 0.1, color: .chartGreen),
+            .init(name: "I", value: 1.0, color: .chartBlue)
         ])
     }
 }

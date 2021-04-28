@@ -15,8 +15,7 @@ struct UploadView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                LinearGradient(gradient: Gradient(colors: [
-                                                    Color(.displayP3, red: 152 / 256, green: 248 / 256, blue: 208 / 256, opacity: 1), Color(.displayP3, red: 104 / 256, green: 173 / 256, blue: 241 / 256, opacity: 1)]), startPoint: .top, endPoint: .bottom)
+                LinearGradient(gradient: Gradient(colors: [.lightGreen, .lightBlue]), startPoint: .top, endPoint: .bottom)
                     .ignoresSafeArea()
 
                 VStack(spacing: 32) {
@@ -32,8 +31,8 @@ struct UploadView: View {
                     ZStack {
                         Circle()
                             .frame(width: 219, height: 219)
-                            .shadow(color: Color(.sRGB, red: 0.55, green: 0.54, blue: 0.68, opacity: 1), radius: 10, x: 0, y: 5)
-                            .foregroundColor(Color(.init(white: 1, alpha: 0.4)))
+                            .shadow(color: .uploadGray, radius: 10, x: 0, y: 5)
+                            .foregroundColor(.white.opacity(0.4))
 
                         R.image.camera.image
                             .resizable()
@@ -48,7 +47,7 @@ struct UploadView: View {
                             .foregroundColor(.white)
                             .frame(width: 233, height: 61, alignment: .center)
                     }
-                    .background(Color(hexString: "4181B0"))
+                    .background(.darkBlue)
                     .cornerRadius(30.5)
                     .sheet(isPresented: $showImagePicker) {
                         ImagePicker(data: $data, encoding: .png)

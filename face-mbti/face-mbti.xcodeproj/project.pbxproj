@@ -29,6 +29,7 @@
 		CCB6B2A2262DC906004DF9D1 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB6B2A1262DC906004DF9D1 /* LineChartView.swift */; };
 		CCB6B2A7262DD097004DF9D1 /* LineChartItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB6B2A6262DD097004DF9D1 /* LineChartItemView.swift */; };
 		CCB6B2AB262DD0B2004DF9D1 /* LineChartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB6B2AA262DD0B2004DF9D1 /* LineChartItem.swift */; };
+		CCF0EAB72639A1F7009DEEC6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF0EAB62639A1F7009DEEC6 /* Colors.swift */; };
 		CCFB9705261DF99B00B6443E /* face_mbtiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB9704261DF99B00B6443E /* face_mbtiTests.swift */; };
 		CFE9A1F826121950009EB96D /* PredictionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9A1F726121950009EB96D /* PredictionResult.swift */; };
 		CFE9A1FA26121EE9009EB96D /* Encodable+jsonString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9A1F926121EE9009EB96D /* Encodable+jsonString.swift */; };
@@ -78,6 +79,7 @@
 		CCB6B2A1262DC906004DF9D1 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		CCB6B2A6262DD097004DF9D1 /* LineChartItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartItemView.swift; sourceTree = "<group>"; };
 		CCB6B2AA262DD0B2004DF9D1 /* LineChartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartItem.swift; sourceTree = "<group>"; };
+		CCF0EAB62639A1F7009DEEC6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		CCFB9702261DF99B00B6443E /* face-mbtiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "face-mbtiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFB9704261DF99B00B6443E /* face_mbtiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = face_mbtiTests.swift; sourceTree = "<group>"; };
 		CCFB9706261DF99B00B6443E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 				CC08EFCD263707D1000920D1 /* HapticFeedback.swift */,
 				CC9889392621A9BC000A9D09 /* Geometry++.swift */,
 				CC0EC569263866010072E88B /* Collection+Enumerated.swift */,
+				CCF0EAB62639A1F7009DEEC6 /* Colors.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 				CC08EFCA263707B7000920D1 /* Color+HexString.swift in Sources */,
 				F4F343FA2610410000BD71E1 /* SwiftUI+Rswift.swift in Sources */,
 				CC08F01426370C17000920D1 /* PieSlice.swift in Sources */,
+				CCF0EAB72639A1F7009DEEC6 /* Colors.swift in Sources */,
 				CC89D97E26331313003E5180 /* CharacterText.swift in Sources */,
 				CFE9A1F826121950009EB96D /* PredictionResult.swift in Sources */,
 				F48F0BA526104D280093F1FB /* ResultTabView.swift in Sources */,
