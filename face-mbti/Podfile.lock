@@ -1,7 +1,4 @@
 PODS:
-  - Alamofire (5.4.0)
-  - AlamofireImage (4.1.0):
-    - Alamofire (~> 5.1)
   - Firebase/Analytics (7.11.0):
     - Firebase/Core
   - Firebase/Core (7.11.0):
@@ -91,16 +88,12 @@ PODS:
   - SwiftLint (0.41.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.2)
-  - AlamofireImage (~> 4.1)
   - Firebase/Analytics
   - R.swift
   - SwiftLint
 
 SPEC REPOS:
   trunk:
-    - Alamofire
-    - AlamofireImage
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -116,8 +109,6 @@ SPEC REPOS:
     - SwiftLint
 
 SPEC CHECKSUMS:
-  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
-  AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
   Firebase: c121feb35e4126c0b355e3313fa9b487d47319fd
   FirebaseAnalytics: cd3bd84d722a24a8923918af8af8e5236f615d77
   FirebaseCore: 907447d8917a4d3eb0cce2829c5a0ad21d90b432
@@ -132,6 +123,6 @@ SPEC CHECKSUMS:
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   SwiftLint: c585ebd615d9520d7fbdbe151f527977b0534f1e
 
-PODFILE CHECKSUM: c48f59f7e5c68d5fc203ef70219a11ace46b5dfb
+PODFILE CHECKSUM: bac032d3a8bd6f0b00f2c87745db16a46eb60e25
 
 COCOAPODS: 1.10.1

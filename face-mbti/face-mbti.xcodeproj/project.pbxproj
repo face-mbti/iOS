@@ -15,6 +15,7 @@
 		CC0EC56A263866010072E88B /* Collection+Enumerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EC569263866010072E88B /* Collection+Enumerated.swift */; };
 		CC2F6B1D261DF3120027322F /* AllertaStencil.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC2F6B1B261DF3120027322F /* AllertaStencil.ttf */; };
 		CC2F6B24261DF5040027322F /* Garamond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC2F6B23261DF5010027322F /* Garamond.ttf */; };
+		CC3A23852639AB9C001191ED /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = CC3A23842639AB9C001191ED /* AlamofireImage */; };
 		CC461A9D2614B9BD00CF7957 /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = CC461A9C2614B9BD00CF7957 /* SwiftUIX */; };
 		CC68B50C2621B23B000942F6 /* SwiftUI+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC68B50B2621B23B000942F6 /* SwiftUI+AlamofireImage.swift */; };
 		CC7CBA162632F9060066BD4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC7CBA152632F9060066BD4C /* GoogleService-Info.plist */; };
@@ -117,6 +118,7 @@
 			files = (
 				1E29DE9031F1F3EFF2CD09A4 /* Pods_face_mbti.framework in Frameworks */,
 				CC461A9D2614B9BD00CF7957 /* SwiftUIX in Frameworks */,
+				CC3A23852639AB9C001191ED /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +334,7 @@
 			name = "face-mbti";
 			packageProductDependencies = (
 				CC461A9C2614B9BD00CF7957 /* SwiftUIX */,
+				CC3A23842639AB9C001191ED /* AlamofireImage */,
 			);
 			productName = "face-mbti";
 			productReference = F40A9CBF2610384A00CC47BA /* face-mbti.app */;
@@ -366,6 +369,7 @@
 			mainGroup = F40A9CB62610384A00CC47BA;
 			packageReferences = (
 				CC461A9B2614B9BD00CF7957 /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+				CC3A23832639AB9C001191ED /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = F40A9CC02610384A00CC47BA /* Products */;
 			projectDirPath = "";
@@ -784,6 +788,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CC3A23832639AB9C001191ED /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		CC461A9B2614B9BD00CF7957 /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX";
@@ -795,6 +807,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CC3A23842639AB9C001191ED /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC3A23832639AB9C001191ED /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
 		CC461A9C2614B9BD00CF7957 /* SwiftUIX */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CC461A9B2614B9BD00CF7957 /* XCRemoteSwiftPackageReference "SwiftUIX" */;
