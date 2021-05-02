@@ -38,6 +38,9 @@ struct UploadView: View {
                             .resizable()
                             .frame(width: 120, height: 90)
                     }
+                    .onTapGesture {
+                        showImagePicker = true
+                    }
 
                     Button(action: {
                         showImagePicker = true

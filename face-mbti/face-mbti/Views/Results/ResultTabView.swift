@@ -30,7 +30,7 @@ struct ResultTabView: View {
 
                 Button(action: { isSheet = true }, label: { Text("공유하기") })
                     .sheet(isPresented: $isSheet) {
-                        AppActivityView(activityItems: ["Hello!"])
+                        AppActivityView(activityItems: [URL(string: "https://www.face-mbti.com/infp")!])
                     }
             }
         }
