@@ -14,14 +14,6 @@ public struct PieChartRow: View {
     let labels: [String]
     @State var slices: PieSlices = PieSlices(data: [])
 
-    @State private var currentTouchedSlice: PieSlice? = nil {
-        didSet {
-            if oldValue != currentTouchedSlice {
-                HapticFeedback.playSelection()
-            }
-        }
-    }
-
     public var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -34,25 +26,7 @@ public struct PieChartRow: View {
                         accentColor: self.accentColors[index],
                         label: self.labels[index]
                     )
-                    .scaleEffect(self.currentTouchedSlice == slice ? 1.1 : 1)
-                    .animation(.spring())
                 }
-                .gesture(
-                    DragGesture()
-                        .onChanged { value in
-                            let rect = geometry.frame(in: .local)
-                            let isTouchInPie = rect.isCirclePoint(value.location)
-                            if isTouchInPie {
-                                let touchAngle = rect.angle(for: value.location)
-                                self.currentTouchedSlice = slices.pieSlice(at: touchAngle)
-                            } else {
-                                self.currentTouchedSlice = nil
-                            }
-                        }
-                        .onEnded { _ in
-                            self.currentTouchedSlice = nil
-                        }
-                )
             }
         }
         .onAppear {

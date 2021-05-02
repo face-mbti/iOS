@@ -20,7 +20,7 @@ struct LineChartItemView: View {
                     Rectangle()
                         .foregroundColor(item.color)
                         .height(isShow ? geometry.size.height * item.value : 0)
-                        .animation(Animation.spring().delay(0.04 * Double(self.index)))
+                        .animation(Animation.spring().delay(0.1 + 0.04 * Double(self.index)))
                         .onAppear {
                             self.isShow = true
                         }
