@@ -7,10 +7,13 @@
 
 import SwiftUI
 import SwiftUIX
+import Combine
 
 struct UploadView: View {
-    @State var data: Data?
     @State var showImagePicker = false
+//    @ObservedObject var datasource = Datasource.shared
+    @State var cancellabels = Set<AnyCancellable>()
+    @State var imageData: Data?
 
     var body: some View {
         NavigationView {
@@ -53,14 +56,14 @@ struct UploadView: View {
                     .background(.darkBlue)
                     .cornerRadius(30.5)
                     .sheet(isPresented: $showImagePicker) {
-                        ImagePicker(data: $data, encoding: .png)
+                        ImagePicker(data: $imageData, encoding: .png)
                     }
                 }
 
                 NavigationLink(
                     "",
-                    destination: LoadingView(),
-                    isActive: Binding(get: { data != nil }, set: { _ in })
+                    destination: LoadingView(imageData: $imageData),
+                    isActive: Binding(get: { imageData != nil }, set: { _ in })
                 )
             }
         }
@@ -69,6 +72,6 @@ struct UploadView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        UploadView()
+        UploadView(imageData: Data())
     }
 }

@@ -37,7 +37,7 @@ struct ResultTabView: View {
     }
 }
 
-struct ResultProfileView: View {
+private struct ResultProfileView: View {
     var body: some View {
         VStack(spacing: 20) {
             R.image.sampleProfile.image
@@ -66,7 +66,7 @@ struct ResultProfileView: View {
     }
 }
 
-struct ResultPieChartView: View {
+private struct ResultPieChartView: View {
     var body: some View {
         PieChartView(
             data: [70, 13, 17],
@@ -77,7 +77,7 @@ struct ResultPieChartView: View {
     }
 }
 
-struct ResultLineChartView: View {
+private struct ResultLineChartView: View {
     var body: some View {
         HStack {
             Spacer()
@@ -108,7 +108,7 @@ struct ResultLineChartView: View {
     }
 }
 
-struct ResultCelebrityView: View {
+private struct ResultCelebrityView: View {
     var body: some View {
         VStack {
             Text("나와 같은 MBTI를 가진 사람은 누가 있을까요?")

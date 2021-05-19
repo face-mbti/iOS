@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import Combine
 
 struct LoadingView: View {
-    @State var showResultTabView = false
     let timer = Timer.publish(every: 0.2, on: .main, in: .common).autoconnect()
+    @State var showResultTabView = false
     @State var typeIndex = 0
+    @State var cancellabels = Set<AnyCancellable>()
+    @Binding var imageData: Data?
 
     var body: some View {
         NavigationView {
@@ -31,9 +34,15 @@ struct LoadingView: View {
                                isActive: $showResultTabView
                 )
             }.onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                    showResultTabView = true
-                }
+                    HTTPClient.shared.uploadImage(type: UploadResult.self, imageData!)
+                        .sink(
+                            receiveCompletion: { _ in },
+                            receiveValue: { result in
+                                print(result)
+                                showResultTabView = true
+                            }
+                        )
+                        .store(in: &cancellabels)
             }
         }.navigationBarHidden(true)
     }
@@ -56,7 +65,7 @@ enum Type: String, CaseIterable {
     }
 }
 
-struct CircledCharacter: View {
+private struct CircledCharacter: View {
     let type: Type
 
     var body: some View {
@@ -84,6 +93,6 @@ struct LoadingView_Previews: PreviewProvider {
         .padding()
         .previewLayout(.sizeThatFits)
 
-        LoadingView()
+        LoadingView(imageData: Binding.constant(nil))
     }
 }
